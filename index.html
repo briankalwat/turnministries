@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TURN Ministries</title>
-        <link rel="stylesheet" href="./bootstrap.css">
-        <link rel="stylesheet" href="./bootstrap4.css">
-        <link rel="stylesheet" href="./theme.css">
 
-        <script src="https://kit.fontawesome.com/82ce1962ff.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://use.typekit.net/roo4rwr.css">
-    </head>
-    <body>
-        <section class="bg-dark text-white p-5">
-            <div class="text-center mx-auto w-75 py-5">
-                <h1>50-70% of church-going students walk away from their faith when they go off to college. <span class="text-primary">We’d like to change that.</span></h1>
-                <a class="btn btn-secondary" href="#" role="button">Get Involved</a>
-            </div>
-        </section>
-        <section class="p-5">
-            <div class="text-center py-5">
-                <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-12 col-md-4 mb-3 mb-sm-0">
-                          <h2 class="display-1 text-secondary mb-0">13</h2>
-                          <h3>Campuses</h3>
-                      </div>
-                      <div class="col-12 col-md-4 mb-3 mb-sm-0">
-                        <h2 class="display-1 text-secondary mb-0">7</h2>
-                        <h3>States</h3>
-                        </div>
-                        <div class="col-12 col-md-4 mb-3 mb-sm-0">
-                            <h2 class="display-1 text-secondary mb-0">1</h2>
-                            <h3>Mission</h3>
-                        </div>
+<head>
+    <title>TURN Ministries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./bootstrap4.css" />
+    <link rel="stylesheet" href="./theme.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/roo4rwr.css" />
+
+    <script src="https://kit.fontawesome.com/82ce1962ff.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <section class="bg-dark text-white p-0 p-md-5">
+        <div class="text-center mx-auto w-75 py-5">
+            <h1>
+                50-70% of church-going students walk away from their faith when they
+                go off to college.
+                <span class="text-primary">We’d like to change that.</span>
+            </h1>
+            <a class="btn btn-secondary" href="#more" data-scroll role="button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="p-0 p-md-5">
+        <div class="text-center py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-3 mb-sm-0">
+                        <h2 class="display-1 text-secondary mb-0">13</h2>
+                        <h3 class="mt-n3">Campuses</h3>
                     </div>
-                  </div>
-
-                  <div class="text-center mx-auto w-75 py-5">
-                    <h2 class="font-weight-lighter">TURN Ministries exists to <span class="text-primary font-weight-bold">support, develop, and launch campus-based, retreat-style ministries</span> so incoming students can connect with local churches and ministries as they enter into college.</h2>
-                    <a class="btn btn-secondary" href="#" role="button">Get Involved</a>
+                    <div class="col-12 col-md-4 mb-3 mb-sm-0">
+                        <h2 class="display-1 text-secondary mb-0">7</h2>
+                        <h3 class="mt-n3">States</h3>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="display-1 text-secondary mb-0">1</h2>
+                        <h3 class="mt-n3">Mission</h3>
+                    </div>
                 </div>
             </div>
-        </section>
-    </body>
+
+            <div id="more" class="text-center mx-auto w-75 py-5">
+                <p class="lead">
+                    We exist to
+                    <span class="font-weight-bold">support, develop, and launch campus-based, retreat-style
+                        ministries</span>
+                    so incoming students can connect with local churches and ministries
+                    as they enter into college.
+                </p>
+
+                <a class="btn btn-primary mb-2 mb-sm-0" href="#" role="button">Organize a Retreat</a>
+                <a class="btn btn-primary mb-2 mb-sm-0" href="#" role="button">Browse Current Retreats</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
 </html>
