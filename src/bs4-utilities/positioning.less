@@ -1,0 +1,27 @@
+// Positioning
+//-------------------//
+
+//-- positioning-common --//
+.positioning-common-utilities() {
+    .position-relative          { position: relative !important; }
+    .position-absolute          { position: absolute !important; }
+    .position-fixed             { position: fixed !important; }
+  }
+  
+  //-- positioning-responsive --//
+  .positioning-responsive-utilities() {
+    .breakpoints-loop(@i: 1) when (@i <= length(@breakpoints)) {
+      @breakpoint:       extract(@breakpoints, @i);
+      @breakpoint-abbrv: extract(@breakpoint-abbrvs, @i);
+      
+      @media (min-width: @breakpoint) {
+        .position-@{breakpoint-abbrv}-relative      { position: relative !important; }
+        .position-@{breakpoint-abbrv}-absolute      { position: absolute !important; }
+        .position-@{breakpoint-abbrv}-fixed         { position: fixed !important; }
+      }
+  
+      .breakpoints-loop(@i + 1);
+    }
+  
+    .breakpoints-loop;
+  }

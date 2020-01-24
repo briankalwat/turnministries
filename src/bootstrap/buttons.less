@@ -10,6 +10,8 @@
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
+  font-family: @btn-font-family;
+  letter-spacing: @btn-letter-spacing;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -68,6 +70,9 @@
 }
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+.btn-secondary {
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
 }
 // Success appears as green
 .btn-success {
