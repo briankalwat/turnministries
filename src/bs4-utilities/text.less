@@ -7,6 +7,12 @@
   .text-right   { text-align: right  !important; }
   .text-center  { text-align: center !important; }
   .text-bold    { font-weight: 900 !important; }
+  .display-1    { font-size: @display1-size; letter-spacing: -2px; }
+  .display-2    { font-size: @display2-size; letter-spacing: -2px; }
+  .display-3    { font-size: @display3-size; letter-spacing: -2px; }
+  .display-4    { font-size: @display4-size; letter-spacing: -2px; }
+  .display-5    { font-size: @display5-size; letter-spacing: -1px; }
+  .display-6    { font-size: @display6-size; letter-spacing: -1px; }
 }
 
 //-- text-responsive --//
@@ -16,9 +22,15 @@
     @breakpoint-abbrv: extract(@breakpoint-abbrvs, @i);
     
     @media (min-width: @breakpoint) {
-      .text-@{breakpoint-abbrv}-left   { text-align: left   !important; }
-      .text-@{breakpoint-abbrv}-right  { text-align: right  !important; }
-      .text-@{breakpoint-abbrv}-center { text-align: center !important; }
+      .text-@{breakpoint-abbrv}-left    { text-align: left   !important; }
+      .text-@{breakpoint-abbrv}-right   { text-align: right  !important; }
+      .text-@{breakpoint-abbrv}-center  { text-align: center !important; }
+      .display-@{breakpoint-abbrv}-1    { font-size: @display1-size; letter-spacing: -2px; }
+      .display-@{breakpoint-abbrv}-2    { font-size: @display2-size; letter-spacing: -2px; }
+      .display-@{breakpoint-abbrv}-3    { font-size: @display3-size; letter-spacing: -2px; }
+      .display-@{breakpoint-abbrv}-4    { font-size: @display4-size; letter-spacing: -2px; }
+      .display-@{breakpoint-abbrv}-5    { font-size: @display5-size; letter-spacing: -1px; }
+      .display-@{breakpoint-abbrv}-6    { font-size: @display6-size; letter-spacing: -1px; }
     }
 
     .breakpoints-loop(@i + 1);

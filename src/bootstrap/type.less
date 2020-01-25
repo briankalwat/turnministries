@@ -49,28 +49,20 @@ h4, .h4 { font-size: @font-size-h4; }
 h5, .h5 { font-size: @font-size-h5; }
 h6, .h6 { font-size: @font-size-h6; }
 
-// Display classes
-// -------------------------
-
-.display-1 {
-  font-size: @display1-size;
-}
-.display-2 {
-  font-size: @display2-size;
-}
-.display-3 {
-  font-size: @display3-size;
-}
-.display-4 {
-  font-size: @display4-size;
-}
-
 // Body text
 // -------------------------
 
 p {
   margin-top: 0;
   margin-bottom: @line-height-computed;
+}
+
+a:not(.btn) {
+  text-decoration: underline;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 .lead {
@@ -160,12 +152,12 @@ mark,
 .bg-primary {
   .bg-variant(@brand-primary);
   color: #fff;
-  blockquote footer, blockquote small, blockquote .small { color: #fff; }
+  a:not(.btn), blockquote footer, blockquote small, blockquote .small { color: #fff; }
 }
 .bg-secondary {
   .bg-variant(@brand-secondary);
   color: #fff;
-  blockquote footer, blockquote small, blockquote .small { color: #fff; }
+  a:not(.btn), blockquote footer, blockquote small, blockquote .small { color: #fff; }
 }
 .bg-success {
   .bg-variant(@state-success-bg);

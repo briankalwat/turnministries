@@ -15,7 +15,7 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         #e3aa0b;
-@brand-secondary:       #7178D9;
+@brand-secondary:       #5f66ca;
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         @brand-primary;
@@ -75,6 +75,8 @@
 @display2-size:             @font-size-base * 4.5;
 @display3-size:             @font-size-base * 3;
 @display4-size:             @font-size-base * 2.5;
+@display5-size:             @font-size-base * 2.1;
+@display6-size:             @font-size-base * 1.8;
 @spacer-default:            2rem;
 
 //== Iconography
@@ -93,14 +95,14 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical:     6px;
-@padding-base-horizontal:   15px;
+@padding-base-vertical:     8px;
+@padding-base-horizontal:   16px;
 
-@padding-large-vertical:    10px;
-@padding-large-horizontal:  16px;
+@padding-large-vertical:    15px;
+@padding-large-horizontal:  25px;
 
 @padding-small-vertical:    5px;
-@padding-small-horizontal:  10px;
+@padding-small-horizontal:  15px;
 
 @padding-xs-vertical:       1px;
 @padding-xs-horizontal:     5px;
@@ -152,9 +154,9 @@
 @btn-font-family:               roboto, sans-serif;
 @btn-letter-spacing:            -.2px;
 
-@btn-default-color:              #333;
+@btn-default-color:              @brand-secondary;
 @btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-border:             #fff;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -717,8 +719,8 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15px;
-@panel-heading-padding:       10px 15px;
+@panel-body-padding:          25px;
+@panel-heading-padding:       15px 20px 10px;
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
@@ -733,6 +735,10 @@
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
+
+@panel-secondary-text:          #fff;
+@panel-secondary-border:      @brand-secondary;
+@panel-secondary-heading-bg:  @brand-secondary;
 
 @panel-success-text:          @state-success-text;
 @panel-success-border:        @state-success-border;
