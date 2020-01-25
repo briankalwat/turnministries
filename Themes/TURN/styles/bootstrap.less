@@ -1,0 +1,15 @@
+// Load Master Styles
+// -------------------------
+@import "../../../Styles/FontAwesome/font-awesome.less";
+@import "../../../Styles/Bootstrap/bootstrap.less";
+
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+    padding: @padding-vertical + 1 @padding-horizontal @padding-vertical - 1;
+}
+
+@import "../../../Styles/_rock-variables.less";
+@import "_variables.less";
+
+// custom variable switchbox
+@navbar-inverse-link-color: @nav-color;
+@blockquote-small-color: lighten(@text-color, 20%);

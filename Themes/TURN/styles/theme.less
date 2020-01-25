@@ -1,0 +1,303 @@
+
+// Load Master Styles
+// -------------------------
+@import "../../../Styles/Bootstrap/variables.less";
+@import "../../../Styles/_rock-core.less";
+@import "../../../Styles/_store.less";
+@import "../../../Styles/_rock-variables.less";
+
+@import "_variables.less";
+
+@import 'bs4-utilities/variables.less';
+@import 'bs4-utilities/float.less';
+@import 'bs4-utilities/text.less';
+@import 'bs4-utilities/spacing.less';
+@import 'bs4-utilities/sizing.less';
+@import 'bs4-utilities/positioning.less';
+
+/*-- float utilities --*/
+.float-common-utilities;
+.float-responsive-utilities;
+
+/*-- text utilities --*/
+.text-common-utilities;
+.text-responsive-utilities;
+
+
+/*-- spacing utilities --*/
+.spacing-common-utilities;
+.spacing-responsive-utilities;
+
+
+/*-- sizing utilities --*/
+.sizing-common-utilities;
+.sizing-responsive-utilities;
+
+/*-- positioning utilities --*/
+.positioning-common-utilities;
+.positioning-responsive-utilities;
+
+/*
+    Rock Theme Styles
+
+    1. HTML Overrides
+    2. Bootstrap Overrides
+    3. Theme Styling
+    4. Responsive Overrides
+
+*/
+
+// 1. HTML Overrides
+// -------------------------
+
+html {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: block;
+}
+
+// 2. Bootstrap Overrides
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: @line-height-computed;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  letter-spacing: -2px;
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  letter-spacing: -1px;
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: @line-height-computed;
+  }
+  
+  a:not(.btn) {
+    text-decoration: underline;
+  
+    &:hover {
+      opacity: .7;
+    }
+  }
+  
+  .lead {
+    margin-bottom: @line-height-computed;
+    font-size: floor((@font-size-base * 1.15));
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: -.5px;
+  
+    @media (min-width: @screen-sm-min) {
+      font-size: (@font-size-base * 1.5);
+    }
+  }
+
+.navbar {
+  position: static; // default is relative which causes the dropdowns to go under the other navbars dispite having a higher z-index - JME 9/9/2013
+  // using fontawesome nav toggle button instead of the BS default
+  .navbar-toggle {
+    padding: 6px 10px;
+
+    i.fa-bars {
+      color: @navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
+}
+
+a:hover i.fs {
+  text-decoration: none;
+}
+
+/*-- text and background color utility classes --*/
+.text-secondary {
+    .text-emphasis-variant(@brand-secondary);
+}
+.text-gray-darker {
+    .text-emphasis-variant(@gray-darker);
+}
+.text-gray-dark {
+    .text-emphasis-variant(@gray-dark);
+}
+.text-gray {
+    .text-emphasis-variant(@gray);
+}
+.text-gray-light {
+    .text-emphasis-variant(@gray-light);
+}
+.text-gray-lighter {
+    .text-emphasis-variant(@gray-lighter);
+}
+.text-white {
+    .text-emphasis-variant(#fff);
+}
+.bg-secondary {
+    .bg-variant(@brand-secondary);
+    color: #fff;
+    a:not(.btn), blockquote footer, blockquote small, blockquote .small { color: #fff; }
+}
+.bg-gray-darker {
+    .bg-variant(@gray-darker);
+    color: #fff;
+    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+}
+.bg-gray-dark {
+    .bg-variant(@gray-dark);
+    color: #fff;
+    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+}
+.bg-gray {
+    .bg-variant(@gray);
+    color: #fff;
+    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+}
+.bg-gray-light {
+    .bg-variant(@gray-light);
+    color: #fff;
+    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+}
+.bg-gray-lighter {
+    .bg-variant(@gray-lighter);
+}
+.bg-white {
+    .bg-variant(#fff);
+}
+
+/*-- navigation --*/
+.nav a {
+    text-decoration: none;
+}
+
+/*-- buttons --*/
+.btn {
+    letter-spacing: @btn-letter-spacing;
+}
+
+.btn-secondary {
+    .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+}
+
+/*-- panels --*/
+.panel-title {
+    letter-spacing: -1px;
+}
+.panel-body {
+    padding-bottom: 0;
+}
+.panel-secondary {
+    .panel-variant(@panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg; @panel-secondary-border);
+}
+
+// 3. Theme Styling
+// -------------------------
+
+/*-- flex floating --*/
+.floating {
+	display: flex;
+	align-items: center;
+}
+
+.floating-item {
+	// max-width: 50%;
+}
+
+.floating-item--top {
+	align-self: flex-start;
+}
+
+.floating-item--bottom {
+	align-self: flex-end;
+}
+
+.shadowed {
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+section {
+	position: relative;
+}
+
+.full-screen {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	}
+}
+
+.background-cover {
+	background-size: cover;
+	background-position: center;
+}
+
+.background-fixed {
+	background-attachment: fixed;
+}
+
+.bring-forward {
+	position: relative;
+	z-index: 1;
+}
+
+@media only screen and (max-width: @screen-xs) {
+	.btn { display: block; }
+	.btn + .btn {
+		margin-top: @padding-base-vertical;
+	}
+}
+
+
+
+// 4. Responsive Overrides
+// -------------------------
+
+// default styling should be for phones 767px or less
+
+// Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) {
+}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) {
+}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) {
+}
+
+
+@import "_css-overrides.less";
