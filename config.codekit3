@@ -99,46 +99,6 @@
 		"oAP": "/includes/_navigation.html",
 		"oF": 0
 		},
-	"/includes/footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/footer.html",
-		"oF": 0
-		},
-	"/includes/header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/header.html",
-		"oF": 0
-		},
-	"/includes/logo.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/logo.html",
-		"oF": 0
-		},
-	"/includes/mark.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/mark.html",
-		"oF": 0
-		},
-	"/includes/navigation.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/navigation.html",
-		"oF": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -155,13 +115,13 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
-	"/js/smooth-scroll.min-min.js": {
+	"/js/skrollr.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/smooth-scroll.min-min-min.js",
+		"oAP": "/js/skrollr.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -173,17 +133,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/smooth-scroll.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/smooth-scroll.polyfills.min-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/smooth-scroll.polyfills.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1471,11 +1420,11 @@
 		"eJ": 0,
 		"ft": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"mS": 0,
 		"oA": 0,
-		"oAP": "/theme.css",
-		"oF": 3,
+		"oAP": "/src/theme.css",
+		"oF": 0,
 		"oS": 0,
 		"rwU": 0,
 		"sI": 0,

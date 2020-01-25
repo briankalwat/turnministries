@@ -13,7 +13,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6 text-center text-md-right mt-3 mt-md-0">
-                        <!-- @include "mark.kit" -->
+                        <!-- @include "_mark.kit" -->
                 </div>
                 <div class="col-xs-12 mt-3">
                     <small>
@@ -31,7 +31,37 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="../js/skrollr.min.js"></script>
+
     <script>
+
+        function deviceOS() {
+            var useragent = navigator.userAgent;
+
+            if(useragent.match(/Android/i)) {
+                return 'android';
+            } else if(useragent.match(/webOS/i)) {
+                return 'webos';
+            } else if(useragent.match(/iPhone/i)) {
+                return 'iphone';
+            } else if(useragent.match(/iPod/i)) {
+                return 'ipod';
+            } else if(useragent.match(/iPad/i)) {
+                return 'ipad';
+            } else if(useragent.match(/Windows Phone/i)) {
+                return 'windows phone';
+            } else if(useragent.match(/SymbianOS/i)) {
+                return 'symbian';
+            } else if(useragent.match(/RIM/i) || useragent.match(/BB/i)) {
+                return 'blackberry';
+            } else {
+                return false;
+            }
+        }
+
+        if(!deviceOS()) {
+            var s = skrollr.init();
+        }
         
         /* init smooth scrolling */
         var scroll = new SmoothScroll('a[href*="#"]', {
