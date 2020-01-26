@@ -49,7 +49,7 @@
 @brand-success:         #5cb85c; // #color
 @brand-info:            #5bc0de; // #color
 @brand-warning:         #f0ad4e; // #color
-@brand-danger:          #d9534f; // #color
+@brand-danger:          #c75144; // #color
 //--
 @gray-darker:            lighten(#000, 13.5%); // #color
 @gray-dark:              lighten(#000, 20%); // #color
@@ -132,7 +132,7 @@
 @padding-xs-horizontal:     5px;
 
 // Global Styles
-@border-radius-base: 4px;       // The global setting for rounding corners.
+@border-radius-base: 6px;       // The global setting for rounding corners.
 
 @photo-border: @theme-3;   // Standard border color for photos.
 @hr-border: lighten(@text-color, 40%);      // The color horizontal rule lines.
@@ -452,8 +452,8 @@
 @state-warning-bg:               #fcf8e3;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
 //--
-@state-danger-text:              #b94a48;
-@state-danger-bg:                #f2dede;
+@state-danger-text:              #fff;
+@state-danger-bg:                @brand-danger;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
 //--
 @state-success-text:             #468847;

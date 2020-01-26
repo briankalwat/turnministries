@@ -1,6 +1,6 @@
-<header id="navigation" class="bg-white position-fixed w-100 shadowed" style="z-index: 10;">
+<header class="">
     <div class="container-fluid p-0">
-        <div class="row floating p-2 p-md-3">
+        <div class="row floating p-3">
             <div class="col-xs-12 col-md-3 floating-item">
                 <a href="/" class="mb-0"><!-- @include "_logo.kit" --></a>
             </div><div class="col-xs-12 col-md-9 floating-item text-right">
@@ -14,13 +14,28 @@
                     <li><a href="/contact">contact</a></li>
                 </ul>
                 
-                <a href="#" class="mr-2 text-gray-darker pull-right hidden visible-sm visible-xs">
-                    <i class="fas fa-lg fa-bars"></i>
+                <a href="#" data-nav="open" class="position-fixed bg-secondary shadowed top-zero right-zero mr-3 mt-3 circular p-3 text-white pull-right hidden visible-sm visible-xs shadowed" style="width: 70px; height: 70px; -webkit-transform: translate3d(0, 0, 0);
+                transform : translate3d(0, 0, 0);">
+                    <i class="fas fa-lg fa-bars" style="margin-top: 6px; margin-right: 3px;"></i>
                 </a>
             </div>
         </div>
     </div>
-    <section class="p-4 bg-primary text-white hidden">
-        <h2 class="mb-0">Clemson University <span class="pull-right">Clemson, SC</span></h2>
-    </section>
 </header>
+
+<div id="mobilenav" class="floating floating-right position-fixed full-screen bg-secondary p-5 hidden">
+    
+    <a href="#" data-nav="close" class="position-fixed bg-gray-darker shadowed top-zero right-zero mr-3 mt-3 circular p-3 text-gray-darker pull-right hidden visible-sm visible-xs shadowed" style="width: 70px; height: 70px; -webkit-transform: translate3d(0, 0, 0);
+                transform : translate3d(0, 0, 0);">
+        <i class="fas fa-lg fa-times" style="margin-top: 6px; margin-left: 5px;"></i>
+    </a>
+
+    <ul class="floating-item list-unstyled text-right w-100">
+        <li class="mb-3"><a href="/" class="h3 text-decoration-none">home</a></li>
+        <li class="mb-3"><a href="/who-we-are" class="h3 text-decoration-none">who we are</a></li>
+        <li class="mb-3"><a href="/what-we-do" class="h3 text-decoration-none">what we do</a></li>
+        <li class="mb-3"><a href="/campus" class="h3 text-decoration-none">campuses</a></li>
+        <li class="mb-3"><a href="/get-involved" class="h3 text-decoration-none">get involved</a></li>
+        <li><a href="/contact" class="h3 text-decoration-none">contact</a></li>
+    </ul>
+</div>

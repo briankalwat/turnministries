@@ -25,16 +25,6 @@
 		"oAP": "/.htaccess",
 		"oF": 0
 		},
-	"/bootstrap.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/bootstrap-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/campus.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -554,26 +544,6 @@
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
-		},
-	"/Styles/bootstrap-modal/bootstrap-modal.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/bootstrap-modal/bootstrap-modal-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"/Styles/bootstrap-sortable.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/bootstrap-sortable-min.css",
-		"oF": 1,
-		"oS": 3
 		},
 	"/Styles/Bootstrap/.csscomb.json": {
 		"ft": 524288,
@@ -1797,26 +1767,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/Styles/developer.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/developer-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"/Styles/fluidbox.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/fluidbox-min.css",
-		"oF": 1,
-		"oS": 3
-		},
 	"/Styles/FontAwesome/_animated.less": {
 		"aP": 0,
 		"bl": 0,
@@ -2248,16 +2198,6 @@
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
-		},
-	"/Styles/JCrop/jcrop.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/Styles/JCrop/jcrop-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/Styles/JCrop/jcrop.less": {
 		"aP": 0,
@@ -2979,26 +2919,6 @@
 		"sI": 0,
 		"sU": 0
 		},
-	"/Styles/RockFont/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/RockFont/style-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"/Styles/screenkeyboard/screen-keyboard.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/screenkeyboard/screen-keyboard-min.css",
-		"oF": 1,
-		"oS": 3
-		},
 	"/Styles/summernote/font/summernote.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -3022,16 +2942,6 @@
 		"oA": 1,
 		"oAP": "/Styles/summernote/font/summernote.woff",
 		"oF": 1
-		},
-	"/Styles/summernote/summernote.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/Styles/summernote/summernote-min.css",
-		"oF": 1,
-		"oS": 3
 		},
 	"/Themes/TURN/assets/lava/campus.kit": {
 		"cB": 0,
@@ -4201,24 +4111,6 @@
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
-		},
-	"/Themes/TURN/styles/bootstrap-tbd/theme.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/Themes/TURN/styles/bootstrap-tbd/theme-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/Themes/TURN/styles/bootstrap-tbd/theme.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Themes/TURN/styles/bootstrap-tbd/theme.css.map",
-		"oF": 0
 		},
 	"/Themes/TURN/styles/bootstrap-tbd/theme.less": {
 		"aP": 0,
