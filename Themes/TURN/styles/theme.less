@@ -1,4 +1,3 @@
-
 // Load Master Styles
 // -------------------------
 @import "../../../Styles/Bootstrap/variables.less";
@@ -8,12 +7,12 @@
 
 @import "_variables.less";
 
-@import 'bs4-utilities/variables.less';
-@import 'bs4-utilities/float.less';
-@import 'bs4-utilities/text.less';
-@import 'bs4-utilities/spacing.less';
-@import 'bs4-utilities/sizing.less';
-@import 'bs4-utilities/positioning.less';
+@import "bs4-utilities/variables.less";
+@import "bs4-utilities/float.less";
+@import "bs4-utilities/text.less";
+@import "bs4-utilities/spacing.less";
+@import "bs4-utilities/sizing.less";
+@import "bs4-utilities/positioning.less";
 
 /*-- float utilities --*/
 .float-common-utilities;
@@ -23,11 +22,9 @@
 .text-common-utilities;
 .text-responsive-utilities;
 
-
 /*-- spacing utilities --*/
 .spacing-common-utilities;
 .spacing-responsive-utilities;
-
 
 /*-- sizing utilities --*/
 .sizing-common-utilities;
@@ -51,8 +48,8 @@
 // -------------------------
 
 html {
-    -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -61,16 +58,32 @@ main {
 
 // 2. Bootstrap Overrides
 // -------------------------
+.collapse {
+  overflow: hidden;
+}
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-top: 0;
   margin-bottom: @line-height-computed;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   letter-spacing: -2px;
   small,
   .small {
@@ -78,9 +91,12 @@ h3, .h3 {
   }
 }
 
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   letter-spacing: -1px;
   small,
   .small {
@@ -88,30 +104,39 @@ h6, .h6 {
   }
 }
 
+.letter-spacing-condensed {
+  letter-spacing: -0.5px;
+}
+
 p {
-    margin-top: 0;
-    margin-bottom: @line-height-computed;
+  margin-top: 0;
+  margin-bottom: @line-height-computed;
+}
+
+a:not(.btn) {
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.7;
   }
-  
-  a:not(.btn) {
-    text-decoration: underline;
-  
-    &:hover {
-      opacity: .7;
-    }
+}
+
+.lead {
+  margin-bottom: @line-height-computed;
+  font-size: floor((@font-size-base * 1.15));
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -1px;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: (@font-size-base * 1.5);
   }
-  
-  .lead {
-    margin-bottom: @line-height-computed;
-    font-size: floor((@font-size-base * 1.15));
-    font-weight: 300;
-    line-height: 1.35;
-    letter-spacing: -.5px;
-  
-    @media (min-width: @screen-sm-min) {
-      font-size: (@font-size-base * 1.5);
-    }
-  }
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
 
 .navbar {
   position: static; // default is relative which causes the dropdowns to go under the other navbars dispite having a higher z-index - JME 9/9/2013
@@ -134,152 +159,193 @@ a:hover i.fs {
   .text-emphasis-variant(@brand-primary) !important;
 }
 .text-secondary {
-    .text-emphasis-variant(@brand-secondary) !important;
+  .text-emphasis-variant(@brand-secondary) !important;
 }
 .text-gray-darker {
-    .text-emphasis-variant(@gray-darker) !important;
+  .text-emphasis-variant(@gray-darker) !important;
 }
 .text-gray-dark {
-    .text-emphasis-variant(@gray-dark) !important;
+  .text-emphasis-variant(@gray-dark) !important;
 }
 .text-gray {
-    .text-emphasis-variant(@gray) !important;
+  .text-emphasis-variant(@gray) !important;
 }
 .text-gray-light {
-    .text-emphasis-variant(@gray-light) !important;
+  .text-emphasis-variant(@gray-light) !important;
 }
 .text-gray-lighter {
-    .text-emphasis-variant(@gray-lighter) !important;
+  .text-emphasis-variant(@gray-lighter) !important;
 }
 .text-white {
-    .text-emphasis-variant(#fff) !important;
+  .text-emphasis-variant(#fff) !important;
 }
 .bg-secondary {
-    .bg-variant(@brand-secondary);
+  .bg-variant(@brand-secondary);
+  color: #fff;
+  a:not(.btn) {
     color: #fff;
-    a:not(.btn) { color: #fff; }
-    .panel { color: @gray-darker; }
+  }
+  .panel {
+    color: @gray-darker;
+  }
 }
 .bg-gray-darker {
-    .bg-variant(@gray-darker);
+  .bg-variant(@gray-darker);
+  color: #fff;
+  a:not(.btn) {
     color: #fff;
-    a:not(.btn) { color: #fff; }
-    .panel { color: @gray-darker; }
+  }
+  .panel {
+    color: @gray-darker;
+  }
 }
 .bg-gray-dark {
-    .bg-variant(@gray-dark);
+  .bg-variant(@gray-dark);
+  color: #fff;
+  a:not(.btn) {
     color: #fff;
-    a:not(.btn) { color: #fff; }
-    .panel { color: @gray-darker; }
+  }
+  .panel {
+    color: @gray-darker;
+  }
 }
 .bg-gray {
-    .bg-variant(@gray);
+  .bg-variant(@gray);
+  color: #fff;
+  a:not(.btn) {
     color: #fff;
-    a:not(.btn) { color: #fff; }
-    .panel { color: @gray-darker; }
+  }
+  .panel {
+    color: @gray-darker;
+  }
 }
 .bg-gray-light {
-    .bg-variant(@gray-light);
+  .bg-variant(@gray-light);
+  color: #fff;
+  a:not(.btn) {
     color: #fff;
-    a:not(.btn) { color: #fff; }
-    .panel { color: @gray-darker; }
+  }
+  .panel {
+    color: @gray-darker;
+  }
 }
 .bg-gray-lighter {
-    .bg-variant(@gray-lighter);
+  .bg-variant(@gray-lighter);
 }
 .bg-white {
-    .bg-variant(#fff);
+  .bg-variant(#fff);
 }
-
 
 /*-- ratios --*/
 // Fixed Aspect Ratios
-.ratio-thin, 
-.ratio-landscape, 
-.ratio-square, 
+.ratio-thin,
+.ratio-landscape,
+.ratio-square,
 .ratio-portrait {
-	position: relative;
+  position: relative;
+  display: block;
+
+  .ratio-item {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &:before {
+    content: "";
     display: block;
-
-    .ratio-item {
-    	position: absolute;
-    	right: 0;
-    	bottom: 0;
-        left: 0;
-        top: 0;
-    }
-
-	&:before{
-        content: "";
-        display: block;
-    }
+  }
 }
 
-.ratio-thin:before{ padding-top: 40%; }
-.ratio-landscape:before{ padding-top: 50%; }
-.ratio-square:before{ padding-top: 100%; }
-.ratio-portrait:before{ padding-top: 150%; }
+.ratio-thin:before {
+  padding-top: 40%;
+}
+.ratio-landscape:before {
+  padding-top: 50%;
+}
+.ratio-square:before {
+  padding-top: 100%;
+}
+.ratio-portrait:before {
+  padding-top: 150%;
+}
 
 /*-- navigation --*/
 .nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*-- buttons --*/
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+
 .btn {
   font-family: proxima-nova, sans-serif;
   letter-spacing: @btn-letter-spacing;
 }
 
+.btn-default {
+  .button-variant(
+    @gray-darker; rgba(0,0,0,.1); rgba(0,0,0,0)
+  );
+}
+
 .btn-secondary {
-    .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+  .button-variant(
+    @btn-secondary-color; @btn-secondary-bg; @btn-secondary-border
+  );
 }
 
 /*-- panels --*/
 .panel-title {
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 .panel-body {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 .panel-secondary {
-    .panel-variant(@panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg; @panel-secondary-border);
+  .panel-variant(
+    @panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg;
+      @panel-secondary-border
+  );
 }
 
 // 3. Theme Styling
 // -------------------------
 
-// #navigation {
-//   top: 70px;
-//   transform: scale(1.3) rotate(-9deg);
-
-//   header {
-//     position: relative;
-//     top: 30px;
-//     transform: scale(.7) rotate(9deg);
-//   }
-// }
-
 /*-- flex floating --*/
 .floating {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .floating-item {
-	// max-width: 50%;
+  // max-width: 50%;
 }
 
 .floating-item--top {
-	align-self: flex-start;
+  align-self: flex-start;
 }
 
 .floating-item--bottom {
-	align-self: flex-end;
+  align-self: flex-end;
 }
 
-.shadowed { box-shadow: 0 0 7px rgba(0,0,0,.1); transition: box-shadow 0.05s ease-in-out; }
-.shadowed-lg { box-shadow: 0 0 35px rgba(0,0,0,.1); }
+.shadowed {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.05s ease-in-out;
+}
+.shadowed-lg {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
 
 .bg-primary,
 .bg-secondary,
@@ -288,54 +354,87 @@ a:hover i.fs {
 .bg-gray,
 .bg-gray-dark,
 .bg-gray-darker {
-
-  .shadowed { box-shadow: 0 0 7px rgba(0,0,0,.2); transition: box-shadow 0.05s ease-in-out; }
-  .shadowed-lg { box-shadow: 0 0 35px rgba(0,0,0,.25); }
-
+  .shadowed {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.05s ease-in-out;
+  }
+  .shadowed-lg {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.rounded { border-radius: @border-radius-base; }
-.rounded-lg { border-radius: @border-radius-base*2; }
-.circular { border-radius: 10000px; }
-.overflow-hidden { overflow: hidden; }
-.text-decoration-none { text-decoration: none !important; }
+.rounded {
+  border-radius: @border-radius-base;
+}
+.rounded-lg {
+  border-radius: @border-radius-base*2;
+}
+.circular {
+  border-radius: 10000px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
 
 section {
-	position: relative;
+  position: relative;
 }
 
-.top-zero { top: 0; }
-.right-zero { right: 0; }
-.bottom-zero { bottom: 0; }
-.left-zero { left: 0; }
+.top-zero {
+  top: 0;
+}
+.right-zero {
+  right: 0;
+}
+.bottom-zero {
+  bottom: 0;
+}
+.left-zero {
+  left: 0;
+}
 
 .full-screen {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .gradient-shim {
   &:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
-		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-	}
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
 }
 
 .background-cover {
-	background-size: cover;
-	background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .background-fixed {
@@ -345,18 +444,18 @@ section {
 }
 
 .bring-forward {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (max-width: @screen-xs) {
-	.btn { display: block; }
-	.btn + .btn {
-		margin-top: @padding-base-vertical;
-	}
+  .btn {
+    display: block;
+  }
+  .btn + .btn {
+    margin-top: @padding-base-vertical;
+  }
 }
-
-
 
 // 4. Responsive Overrides
 // -------------------------
@@ -376,11 +475,12 @@ section {
 }
 
 @media only screen and (max-width: @screen-xs) {
-	.btn { display: block; }
-	.btn + .btn {
-		margin-top: @padding-base-vertical;
-	}
+  .btn {
+    display: block;
+  }
+  .btn + .btn {
+    margin-top: @padding-base-vertical;
+  }
 }
-
 
 @import "_css-overrides.less";
