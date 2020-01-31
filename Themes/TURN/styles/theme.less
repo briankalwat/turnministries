@@ -375,5 +375,12 @@ section {
 @media (min-width: @screen-lg-min) {
 }
 
+@media only screen and (max-width: @screen-xs) {
+	.btn { display: block; }
+	.btn + .btn {
+		margin-top: @padding-base-vertical;
+	}
+}
+
 
 @import "_css-overrides.less";
