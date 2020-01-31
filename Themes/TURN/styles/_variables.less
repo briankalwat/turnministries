@@ -46,7 +46,7 @@
 //// Bootstrap Colors {The primary colors defined by the Bootstrap framework. [More Information](http://getbootstrap.com/customize/#colors)}
 @brand-primary:         @theme-1; // #color
 @brand-secondary:       #5f66ca; // #color
-@brand-success:         #5cb85c; // #color
+@brand-success:         #74c474; // #color
 @brand-info:            #5bc0de; // #color
 @brand-warning:         #f0ad4e; // #color
 @brand-danger:          #c75144; // #color
@@ -60,7 +60,7 @@
 // Font Sizes
 //// Heading Sizes
 @font-size-h1:            ceil((@font-size-base * 2.5));
-@font-size-h2:            ceil((@font-size-base * 2.2));
+@font-size-h2:            ceil((@font-size-base * 2));
 @font-size-h3:            ceil((@font-size-base * 1.8));
 @font-size-h4:            ceil((@font-size-base * 1.5));
 @font-size-h5:            ceil((@font-size-base * 1.2));
@@ -216,21 +216,21 @@
 @panel-secondary-border:      @brand-secondary;
 @panel-secondary-heading-bg:  @brand-secondary;
 
-@panel-success-text:          @state-success-text;
-@panel-success-border:        @state-success-border;
-@panel-success-heading-bg:    @state-success-bg;
+@panel-success-text:          #fff;
+@panel-success-border:        @brand-success;
+@panel-success-heading-bg:    @brand-success;
 
-@panel-info-text:             @state-info-text;
-@panel-info-border:           @state-info-border;
-@panel-info-heading-bg:       @state-info-bg;
+@panel-info-text:             #fff;
+@panel-info-border:           @brand-info;
+@panel-info-heading-bg:       @brand-info;
 
-@panel-warning-text:          @state-warning-text;
-@panel-warning-border:        @state-warning-border;
-@panel-warning-heading-bg:    @state-warning-bg;
+@panel-warning-text:          #fff;
+@panel-warning-border:        @brand-warning;
+@panel-warning-heading-bg:    @brand-warning;
 
-@panel-danger-text:           @state-danger-text;
-@panel-danger-border:         @state-danger-border;
-@panel-danger-heading-bg:     @state-danger-bg;
+@panel-danger-text:           #fff;
+@panel-danger-border:         @brand-danger;
+@panel-danger-heading-bg:     @brand-danger;
 
 // Grid
 @grid-border-color: #ddd;   // The border color of the grids cells.
@@ -402,7 +402,7 @@
 @tree-selected-color: #fff;      // Text color of selected items in the treeview.
 
 // Buttons
-@btn-font-weight:                600;
+@btn-font-weight:                700;
 @btn-letter-spacing:             -.2px;
 //--
 @btn-default-color:              @brand-secondary;
@@ -448,19 +448,19 @@
 @label-type-bg: @theme-3;  // Used for showing the 'type' of an idea. For instance on the group viewer this highlights the group's type.
 
 // Form States and Actions Colors
-@state-warning-text:             #c09853;
+@state-warning-text:             @brand-warning;
 @state-warning-bg:               #fcf8e3;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
 //--
-@state-danger-text:              #fff;
-@state-danger-bg:                @brand-danger;
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                #fff;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
 //--
-@state-success-text:             #468847;
+@state-success-text:             @brand-success;
 @state-success-bg:               #dff0d8;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 //--
-@state-info-text:                #3a87ad;
+@state-info-text:                @brand-info;
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 

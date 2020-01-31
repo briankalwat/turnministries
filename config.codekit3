@@ -2951,6 +2951,14 @@
 		"oAP": "/campus.html",
 		"oF": 2
 		},
+	"/Themes/TURN/assets/lava/email/turn-template.lava": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Themes/TURN/assets/lava/email/turn-template.lava",
+		"oF": 0
+		},
 	"/Themes/TURN/assets/lava/includes/_footer.kit": {
 		"cB": 0,
 		"ft": 2048,

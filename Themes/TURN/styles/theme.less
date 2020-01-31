@@ -105,7 +105,7 @@ p {
     margin-bottom: @line-height-computed;
     font-size: floor((@font-size-base * 1.15));
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.35;
     letter-spacing: -.5px;
   
     @media (min-width: @screen-sm-min) {
@@ -130,51 +130,59 @@ a:hover i.fs {
 }
 
 /*-- text and background color utility classes --*/
+.text-primary {
+  .text-emphasis-variant(@brand-primary) !important;
+}
 .text-secondary {
-    .text-emphasis-variant(@brand-secondary);
+    .text-emphasis-variant(@brand-secondary) !important;
 }
 .text-gray-darker {
-    .text-emphasis-variant(@gray-darker);
+    .text-emphasis-variant(@gray-darker) !important;
 }
 .text-gray-dark {
-    .text-emphasis-variant(@gray-dark);
+    .text-emphasis-variant(@gray-dark) !important;
 }
 .text-gray {
-    .text-emphasis-variant(@gray);
+    .text-emphasis-variant(@gray) !important;
 }
 .text-gray-light {
-    .text-emphasis-variant(@gray-light);
+    .text-emphasis-variant(@gray-light) !important;
 }
 .text-gray-lighter {
-    .text-emphasis-variant(@gray-lighter);
+    .text-emphasis-variant(@gray-lighter) !important;
 }
 .text-white {
-    .text-emphasis-variant(#fff);
+    .text-emphasis-variant(#fff) !important;
 }
 .bg-secondary {
     .bg-variant(@brand-secondary);
     color: #fff;
-    a:not(.btn), blockquote footer, blockquote small, blockquote .small { color: #fff; }
+    a:not(.btn) { color: #fff; }
+    .panel { color: @gray-darker; }
 }
 .bg-gray-darker {
     .bg-variant(@gray-darker);
     color: #fff;
-    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+    a:not(.btn) { color: #fff; }
+    .panel { color: @gray-darker; }
 }
 .bg-gray-dark {
     .bg-variant(@gray-dark);
     color: #fff;
-    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+    a:not(.btn) { color: #fff; }
+    .panel { color: @gray-darker; }
 }
 .bg-gray {
     .bg-variant(@gray);
     color: #fff;
-    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+    a:not(.btn) { color: #fff; }
+    .panel { color: @gray-darker; }
 }
 .bg-gray-light {
     .bg-variant(@gray-light);
     color: #fff;
-    blockquote footer, blockquote small, blockquote .small { color: #fff; }
+    a:not(.btn) { color: #fff; }
+    .panel { color: @gray-darker; }
 }
 .bg-gray-lighter {
     .bg-variant(@gray-lighter);
@@ -183,6 +191,35 @@ a:hover i.fs {
     .bg-variant(#fff);
 }
 
+
+/*-- ratios --*/
+// Fixed Aspect Ratios
+.ratio-thin, 
+.ratio-landscape, 
+.ratio-square, 
+.ratio-portrait {
+	position: relative;
+    display: block;
+
+    .ratio-item {
+    	position: absolute;
+    	right: 0;
+    	bottom: 0;
+        left: 0;
+        top: 0;
+    }
+
+	&:before{
+        content: "";
+        display: block;
+    }
+}
+
+.ratio-thin:before{ padding-top: 40%; }
+.ratio-landscape:before{ padding-top: 50%; }
+.ratio-square:before{ padding-top: 100%; }
+.ratio-portrait:before{ padding-top: 150%; }
+
 /*-- navigation --*/
 .nav a {
     text-decoration: none;
@@ -190,7 +227,8 @@ a:hover i.fs {
 
 /*-- buttons --*/
 .btn {
-    letter-spacing: @btn-letter-spacing;
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: @btn-letter-spacing;
 }
 
 .btn-secondary {
@@ -240,11 +278,24 @@ a:hover i.fs {
 	align-self: flex-end;
 }
 
-.shadowed {
-	box-shadow: 0 0 5px rgba(0,0,0,.2);
+.shadowed { box-shadow: 0 0 7px rgba(0,0,0,.1); transition: box-shadow 0.05s ease-in-out; }
+.shadowed-lg { box-shadow: 0 0 35px rgba(0,0,0,.1); }
+
+.bg-primary,
+.bg-secondary,
+.bg-gray-lighter,
+.bg-gray-light,
+.bg-gray,
+.bg-gray-dark,
+.bg-gray-darker {
+
+  .shadowed { box-shadow: 0 0 7px rgba(0,0,0,.2); transition: box-shadow 0.05s ease-in-out; }
+  .shadowed-lg { box-shadow: 0 0 35px rgba(0,0,0,.25); }
+
 }
 
 .rounded { border-radius: @border-radius-base; }
+.rounded-lg { border-radius: @border-radius-base*2; }
 .circular { border-radius: 10000px; }
 .overflow-hidden { overflow: hidden; }
 .text-decoration-none { text-decoration: none !important; }
@@ -288,7 +339,9 @@ section {
 }
 
 .background-fixed {
-	background-attachment: fixed;
+  @media only screen and (min-width: @screen-md) {
+    background-attachment: fixed;
+  }
 }
 
 .bring-forward {
