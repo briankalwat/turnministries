@@ -6,6 +6,14 @@
     .position-relative          { position: relative !important; }
     .position-absolute          { position: absolute !important; }
     .position-fixed             { position: fixed !important; }
+    .top-zero                   { top: 0 !important; }
+    .right-zero                 { right: 0 !important; }
+    .bottom-zero                { bottom: 0 !important; }
+    .left-zero                  { left: 0 !important; }
+    .top-auto                   { top: auto !important; }
+    .right-auto                 { right: auto !important; }
+    .bottom-auto                { bottom: auto !important; }
+    .left-auto                  { left: auto !important; }
   }
   
   //-- positioning-responsive --//
@@ -18,6 +26,14 @@
         .position-@{breakpoint-abbrv}-relative      { position: relative !important; }
         .position-@{breakpoint-abbrv}-absolute      { position: absolute !important; }
         .position-@{breakpoint-abbrv}-fixed         { position: fixed !important; }
+        .top-@{breakpoint-abbrv}-zero               { top: 0 !important; }
+        .right-@{breakpoint-abbrv}-zero             { right: 0 !important; }
+        .bottom-@{breakpoint-abbrv}-zero            { bottom: 0 !important; }
+        .left-@{breakpoint-abbrv}-zero              { left: 0 !important; }
+        .top-@{breakpoint-abbrv}-auto               { top: auto !important; }
+        .right-@{breakpoint-abbrv}-auto             { right: auto !important; }
+        .bottom-@{breakpoint-abbrv}-auto            { bottom: auto !important; }
+        .left-@{breakpoint-abbrv}-auto              { left: auto !important; }
       }
   
       .breakpoints-loop(@i + 1);
