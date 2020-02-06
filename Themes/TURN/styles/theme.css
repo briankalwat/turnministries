@@ -12223,6 +12223,9 @@ a:not(.btn) {
 a:not(.btn):hover {
   opacity: 0.7;
 }
+.text-italic {
+  font-style: italic;
+}
 .lead {
   margin-bottom: 28px;
   font-size: 23px;
@@ -12307,6 +12310,20 @@ a.text-gray-lighter:focus {
 a.text-white:hover,
 a.text-white:focus {
   color: #e6e6e6 !important;
+}
+.bg-primary {
+  background-color: #e3aa0b;
+  color: #fff;
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #b28609;
+}
+.bg-primary a:not(.btn) {
+  color: #fff;
+}
+.bg-primary .panel {
+  color: #222222;
 }
 .bg-secondary {
   background-color: #5f66ca;
@@ -12559,6 +12576,48 @@ fieldset[disabled] .btn-secondary.focus {
   color: #5f66ca;
   background-color: #fff;
 }
+/*-- swiper --*/
+.swiper-wrapper {
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  background-color: #5f66ca !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #222222;
+  height: 50px !important;
+  width: 50px !important;
+  margin-top: -50px !important;
+  border-radius: 60px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+.swiper-button-next:before {
+  position: relative;
+  transform: rotate(45deg);
+  right: 2px;
+}
+.swiper-button-prev:before {
+  position: relative;
+  transform: rotate(-135deg);
+  left: 2px;
+}
 /*-- panels --*/
 .panel-title {
   letter-spacing: -1px;
@@ -12596,7 +12655,7 @@ fieldset[disabled] .btn-secondary.focus {
   align-self: flex-end;
 }
 .shadowed {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
   transition: box-shadow 0.05s ease-in-out;
 }
 .shadowed-lg {
@@ -12604,17 +12663,15 @@ fieldset[disabled] .btn-secondary.focus {
 }
 .bg-primary .shadowed,
 .bg-secondary .shadowed,
-.bg-gray-lighter .shadowed,
 .bg-gray-light .shadowed,
 .bg-gray .shadowed,
 .bg-gray-dark .shadowed,
 .bg-gray-darker .shadowed {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.05s ease-in-out;
 }
 .bg-primary .shadowed-lg,
 .bg-secondary .shadowed-lg,
-.bg-gray-lighter .shadowed-lg,
 .bg-gray-light .shadowed-lg,
 .bg-gray .shadowed-lg,
 .bg-gray-dark .shadowed-lg,

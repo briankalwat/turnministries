@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="../Themes/TURN/Styles/bootstrap.css" />
     <link rel="stylesheet" href="../Themes/TURN/Styles/theme.css" />
     <link rel="stylesheet" href="https://use.typekit.net/roo4rwr.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/82ce1962ff.js" crossorigin="anonymous"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    
     <script src="../Themes/TURN/js/smooth-scroll.polyfills.min.js" type="text/javascript"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
 </head>
 
 <body>
@@ -129,40 +127,84 @@
     </div>
 </section>
 
-<section id="services" class="bg-white px-4 py-6 px-md-6 py-lg-7 py-xl-8">
-    <h2 class="display-5 display-md-4 mb-5">Services We Offer</h2>
-    <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Consulting</h3>
-                <p>Guidance in discernment. Let us be a sounding board for the tough decisions.</p>
+
+<!-- Slider main container -->
+<section id="services" class="bg-gray-lighter pt-5 pb-4 pt-md-7 pb-md-6 py-lg-7">
+    <div class="text-center">
+        <h2 class="display-5 display-md-4 mb-1">How We Can Help</h2>
+        <p class="text-italic text-primary mb-2">Swipe to See More</p>
+    </div>
+<div class="swiper-container pb-4">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper py-2">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Consulting</h2>
+                    <p>Guidance in discernment. Let us be a sounding board for the tough decisions.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Curriculum</h3>
-                <p>Equipping staff to function in their role as highly successful volunteers.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Curriculum</h2>
+                    <p>Equipping staff to function in their role as highly successful volunteers.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Leadership Retreats</h3>
-                <p>Semesterly weekend events for student leaders to fellowship, strategize, and vision cast.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Leadership Retreats</h2>
+                    <p>Semesterly weekend events for student leaders to fellowship, strategize, and vision cast.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Networking</h3>
-                <p>Turn provides opportunities to gain a broad perspective through connecting with student leaders from all across the country walking through similar experiences.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Networking</h2>
+                    <p>Turn provides opportunities to gain a broad perspective through connecting with student leaders from all across the country walking through similar experiences.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Publicity</h3>
-                <p>Strategically expand the reach of your ministries message. Tap into the extensive bank of churches and ministries turn has access to.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Publicity</h2>
+                    <p>Strategically expand the reach of your ministries message. Tap into the extensive bank of churches and ministries turn has access to.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                <h3 class="mb-1">Workshops</h3>
-                <p>Intensive events located at your campus facilitated by turn to jumpstart projects or refocus a team to avoid mission drift.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Workshops</h2>
+                    <p>Intensive events located at your campus facilitated by turn to jumpstart projects or refocus a team to avoid mission drift.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <h3 class="mb-1">Launching</h3>
-                <p>A program for those interested in start a retreat ministry. We'll be with you every step of the way.</p>
+        </div>
+        <div class="swiper-slide">
+            <div class="panel shadowed mb-0">
+                <div class="panel-body">
+                    <h2 class="mb-2">Launching</h2>
+                    <p>A program for those interested in start a retreat ministry. We'll be with you every step of the way.</p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar hidden"></div>
+</div>
 </section>
 
 
@@ -249,6 +291,62 @@
             var navHeight = $('#navigation').outerHeight();
             $('#navigation').css('margin-top', -navHeight);
             $('body').css('padding-top', navHeight);
+
+            /* initialize swiper */
+            var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            speed: 300,
+            centeredSlides: true,
+            roundLengths: true,
+            grabCursor: true,
+            spaceBetween: 15,
+            slidesPerView: 1.25,
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1.25,
+                spaceBetween: 15
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 1.7,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1000: {
+                slidesPerView: 2,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1400: {
+                slidesPerView: 3.23,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1800: {
+                slidesPerView: 3.5,
+                spaceBetween: 30
+                }
+            },
+
+
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            })
 
         });
     </script>
