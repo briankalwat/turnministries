@@ -76,6 +76,10 @@ h6,
 .h6 {
   margin-top: 0;
   margin-bottom: @line-height-computed;
+
+  small {
+    letter-spacing: 0;
+  }
 }
 
 h1,
@@ -104,9 +108,9 @@ h6,
   }
 }
 
-.letter-spacing-condensed {
-  letter-spacing: -0.5px;
-}
+.font-weight-light { font-weight: 300; }
+.letter-spacing-condensed { letter-spacing: -0.5px; }
+.letter-spacing-normal { letter-spacing: normal; }
 
 p {
   margin-top: 0;
@@ -125,13 +129,13 @@ a:not(.btn) {
 
 .lead {
   margin-bottom: @line-height-computed;
-  font-size: floor((@font-size-base * 1.15));
+  font-size: floor((@font-size-base * 1.2));
   font-weight: 300;
   line-height: 1.25;
-  letter-spacing: -.5px;
+  letter-spacing: -.2px;
 
   @media (min-width: @screen-sm-min) {
-    font-size: (@font-size-base * 1.5);
+    font-size: (@font-size-base * 1.3);
   }
 }
 
@@ -155,6 +159,19 @@ ol {
 a:hover i.fs {
   text-decoration: none;
 }
+
+
+/*-- labels --*/
+.label {
+  padding: 0.25em 0.6em 0.2em;
+  background-color: @gray-light;
+}
+.label-secondary { background-color: @brand-secondary; }
+.label-gray-lighter { background-color: @gray-lighter; }
+.label-gray-light { background-color: @gray-light; }
+.label-gray { background-color: @gray; }
+.label-gray-dark { background-color: @gray-dark; }
+.label-gray-darker { background-color: @gray-darker; }
 
 /*-- text and background color utility classes --*/
 .text-primary {
@@ -182,7 +199,7 @@ a:hover i.fs {
   .text-emphasis-variant(#fff) !important;
 }
 .bg-primary {
-  .bg-variant(@brand-primary);
+  .bg-variant(darken(@brand-primary, 9%));
   color: #fff;
   a:not(.btn) {
     color: #fff;
@@ -305,12 +322,41 @@ a:hover i.fs {
 .btn {
   font-family: proxima-nova, sans-serif;
   letter-spacing: @btn-letter-spacing;
+  border-width: 2px;
+}
+
+.btn-sm {
+  border-radius: 5px;
 }
 
 .btn-default {
   .button-variant(
-    @gray-darker; rgba(0,0,0,.1); rgba(0,0,0,0)
+    @gray-darker; transparent; @gray-darker
   );
+
+  &:hover {
+    background-color: @gray-darker;
+    border-color: @gray-darker;
+    color: #fff;
+  }
+}
+
+.bg-primary,
+.bg-secondary,
+.bg-gray,
+.bg-gray-dark,
+.bg-gray-darker {
+  .btn-default {
+    .button-variant(
+      #fff; transparent; #fff
+    );
+
+    &:hover {
+      background-color: #fff;
+      border-color: #fff;
+      color: @gray-darker;
+    }
+  }
 }
 
 .btn-secondary {
@@ -327,7 +373,7 @@ a:hover i.fs {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: @brand-secondary !important;
+  background-color: @brand-primary !important;
 }
 
 .swiper-button-prev,
@@ -370,6 +416,7 @@ a:hover i.fs {
 }
 
 /*-- panels --*/
+.panel { border-width: 0; }
 .panel-title {
   letter-spacing: -1px;
 }
@@ -383,33 +430,60 @@ a:hover i.fs {
   );
 }
 
+/*-- wells --*/
+.well {
+  background-color: rgba(0,0,0,.1);
+  box-shadow: none;
+  border: none;
+  padding: @line-height-computed;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &.well-sm {
+    padding: ceil(@line-height-computed * .8);
+  }
+
+  &.well-lg {
+    padding: ceil(@line-height-computed * 1.5);
+  }
+}
+
 // 3. Theme Styling
 // -------------------------
 
-/*-- flex floating --*/
-.floating {
-  display: flex;
-  align-items: center;
+/*-- navigation --*/
+#navigation {
+  top: 0;
+  transition: all .15s ease-in-out 0s;
+
+  &.scrollUp {
+    top: -105px;
+    transition: all .15s ease-in-out 0s;
+  }
 }
 
-.floating-item {
-  // max-width: 50%;
+#mobilenav {
+  right: -100%;
+  left: 100%;
+  transition-property: left, right;
+  transition-duration: .2s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
+
+  &.open {
+    left: 0;
+    right: 0;
+  }
 }
 
-.floating-item--top {
-  align-self: flex-start;
-}
-
-.floating-item--bottom {
-  align-self: flex-end;
-}
-
-.shadowed {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+.shadowed, .panel {
+  box-shadow: 0 2px 0 rgba(0,0,0,.1), 0 0 15px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.05s ease-in-out;
 }
 .shadowed-lg {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
 }
 
 .bg-primary,
@@ -445,19 +519,6 @@ a:hover i.fs {
 
 section {
   position: relative;
-}
-
-.top-zero {
-  top: 0;
-}
-.right-zero {
-  right: 0;
-}
-.bottom-zero {
-  bottom: 0;
-}
-.left-zero {
-  left: 0;
 }
 
 .full-screen {
@@ -512,15 +573,6 @@ section {
   z-index: 1;
 }
 
-@media only screen and (max-width: @screen-xs) {
-  .btn {
-    display: block;
-  }
-  .btn + .btn {
-    margin-top: @padding-base-vertical;
-  }
-}
-
 // 4. Responsive Overrides
 // -------------------------
 
@@ -532,6 +584,25 @@ section {
 
 // Medium devices (desktops, 992px and up)
 @media (min-width: @screen-md-min) {
+  h1, .h2 { font-size: @font-size-h1 * 1.1; }
+
+  /*-- flex floating --*/
+  .floating {
+    display: flex;
+    align-items: center;
+  }
+
+  .floating-item {
+    // max-width: 50%;
+  }
+
+  .floating-item--top {
+    align-self: flex-start;
+  }
+
+  .floating-item--bottom {
+    align-self: flex-end;
+  }
 }
 
 // Large devices (large desktops, 1200px and up)
@@ -539,9 +610,10 @@ section {
 }
 
 @media only screen and (max-width: @screen-xs) {
-  .btn {
-    display: block;
-  }
+  // .btn {
+  //   display: block;
+  // }
+
   .btn + .btn {
     margin-top: @padding-base-vertical;
   }

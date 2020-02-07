@@ -1,5 +1,5 @@
 // Theme Colors *show in editor*
-@theme-1: #e3aa0b; // bootstrap primary blue #color
+@theme-1: #ffc011; // bootstrap primary blue #color
 @theme-1-text: #fff; // #color
 //--
 @theme-2: @gray-darker; // admin bar
@@ -25,7 +25,6 @@
 //--
 @body-bg:           @gray-darker; // The background color of the page. #color
 
-
 // Text *show in editor*
 @text-color:             @gray-darker; // The default text color. #color
 @link-color:             @brand-secondary; // The color for all links. #color
@@ -34,7 +33,7 @@
 @text-selection-bg:      #afd074; // Text selection background color (used when people select text with the mouse). #color
 @text-selection-color:   #fff;    // Text selection text color (used when people select text with the mouse). #color
 @font-family-sans-serif: apertura, "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; // The base font to use for text. Be sure when defining this font that the various weights are configured.
-@font-size-base:          20px; // The default text size.
+@font-size-base:          21px; // The default text size.
 @line-height-base:        1.428571429; // The default line height.
 //--
 @required-field-color: #eca9a7; // Color of the small dot that denotes required fields. #color
@@ -48,19 +47,19 @@
 @brand-secondary:       #5f66ca; // #color
 @brand-success:         #74c474; // #color
 @brand-info:            #5bc0de; // #color
-@brand-warning:         #f0ad4e; // #color
+@brand-warning:         #ffbd06; // #color
 @brand-danger:          #c75144; // #color
 //--
 @gray-darker:            lighten(#000, 13.5%); // #color
-@gray-dark:              lighten(#000, 20%); // #color
-@gray:                   lighten(#000, 33.5%); // #color
-@gray-light:             lighten(#000, 46.7%); // #color
-@gray-lighter:           lighten(#000, 93.5%); // #color
+@gray-dark:              lighten(#000, 25%); // #color
+@gray:                   lighten(#000, 55%); // #color
+@gray-light:             lighten(#000, 70%); // #color
+@gray-lighter:           lighten(#000, 95%); // #color
 
 // Font Sizes
 //// Heading Sizes
 @font-size-h1:            ceil((@font-size-base * 2.5));
-@font-size-h2:            ceil((@font-size-base * 2));
+@font-size-h2:            ceil((@font-size-base * 2.3));
 @font-size-h3:            ceil((@font-size-base * 1.8));
 @font-size-h4:            ceil((@font-size-base * 1.5));
 @font-size-h5:            ceil((@font-size-base * 1.2));
@@ -79,10 +78,10 @@
 @display6-size:             @font-size-base * 1.2;
 @spacer-default:            2rem;
 
-@screen-xs:                  480px;
-@screen-sm:                  768px;
-@screen-md:                  992px;
-@screen-lg:                  1441px;
+@screen-xs:                 480px;
+@screen-sm:                 768px;
+@screen-md:                 992px;
+@screen-lg:                 1441px;
 
 // Page Areas
 //// Header
@@ -415,8 +414,8 @@
 @btn-default-border:             #fff;
 //--
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             @brand-primary;
+@btn-primary-bg:                 darken(@brand-primary, 9%);
+@btn-primary-border:             darken(@brand-primary, 9%);
 //--
 @btn-secondary-color:            #fff;
 @btn-secondary-bg:               @brand-secondary;

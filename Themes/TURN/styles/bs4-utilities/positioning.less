@@ -14,6 +14,8 @@
     .right-auto                 { right: auto !important; }
     .bottom-auto                { bottom: auto !important; }
     .left-auto                  { left: auto !important; }
+    .visible                    { display: inline-block; }
+    .hidden                     { display: none; }
   }
   
   //-- positioning-responsive --//
@@ -34,6 +36,8 @@
         .right-@{breakpoint-abbrv}-auto             { right: auto !important; }
         .bottom-@{breakpoint-abbrv}-auto            { bottom: auto !important; }
         .left-@{breakpoint-abbrv}-auto              { left: auto !important; }
+        .@{breakpoint-abbrv}-visible                { display: inline-block !important; }
+        .@{breakpoint-abbrv}-hidden                 { display: none !important; }
       }
   
       .breakpoints-loop(@i + 1);

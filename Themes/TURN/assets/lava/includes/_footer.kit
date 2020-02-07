@@ -37,15 +37,34 @@
     <script>
         $('document').ready(function(){
 
+            /* hide nav on scroll down */
+            var c, currentScrollTop = 0,
+                navbar = $('#navigation');
+
+            $(window).scroll(function () {
+                var a = $(window).scrollTop();
+                var b = navbar.height();
+                
+                currentScrollTop = a;
+                
+                if (c < currentScrollTop && a > b + b) {
+                    navbar.addClass("scrollUp");
+                } else if (c > currentScrollTop && !(a <= b)) {
+                    navbar.removeClass("scrollUp");
+                }
+                c = currentScrollTop;
+            });
+
+            /* open and close mobile navigation */
             $('[data-nav="open"]').on('click', function(e){
                 e.preventDefault();
-                $('#mobilenav').removeClass('hidden');
+                $('#mobilenav').addClass('open');
                 $('body').addClass('overflow-hidden');
             });
 
             $('[data-nav="close"]').on('click', function(e){
                 e.preventDefault();
-                $('#mobilenav').addClass('hidden');
+                $('#mobilenav').removeClass('open');
                 $('body').removeClass('overflow-hidden');
             });
             
@@ -60,7 +79,6 @@
 
             /* take care of offset caused by fixed header */
             var navHeight = $('#navigation').outerHeight();
-            $('#navigation').css('margin-top', -navHeight);
             $('body').css('padding-top', navHeight);
 
             /* initialize swiper */
