@@ -15,6 +15,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="../Themes/TURN/js/smooth-scroll.polyfills.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" defer="defer" src="https://labs.bible.org/api/NETBibleTagger/v2/netbibletagger.js">
+     org.bible.NETBibleTagger.voidOnMouseOut = true;
+     org.bible.NETBibleTagger.parseAnchors = true;
+     org.bible.NETBibleTagger.customCSS = true;
+     </script>
 </head>
 
 <body>
@@ -88,8 +93,8 @@
                             <li><a href="/contact">contact</a></li>
                         </ul>
                         
-                        <a href="#" data-nav="open" class="position-absolute bg-secondary shadowed right-zero mr-2 mt-2 circular p-2 text-white pull-right hidden visible-sm visible-xs shadowed" style="top: -14px; width: 70px; height: 70px; -webkit-transform: translate3d(0, 0, 0); transform : translate3d(0, 0, 0);">
-                            <i class="fas fa-lg fa-bars" style="margin-top: 12px; margin-right: 9px;"></i>
+                        <a href="#" data-nav="open" class="position-absolute bg-secondary shadowed right-zero mr-2 mt-2 circular p-2 text-white pull-right hidden visible-sm visible-xs shadowed" style="top: -50px; width: 70px; height: 70px; -webkit-transform: translate3d(0, 0, 0); transform : translate3d(0, 0, 0);">
+                            <i class="fas fa-lg fa-bars" style="margin-top: 11px; margin-right: 8px;"></i>
                         </a>
                     </div>
                 </div>
@@ -440,58 +445,58 @@
 
             /* initialize swiper */
             var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            speed: 300,
-            centeredSlides: true,
-            roundLengths: true,
-            grabCursor: true,
-            spaceBetween: 15,
-            slidesPerView: 1.25,
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-            breakpoints: {
-                // when window width is >= 480px
-                480: {
+                // Optional parameters
+                direction: 'horizontal',
+                speed: 300,
+                centeredSlides: true,
+                roundLengths: true,
+                grabCursor: true,
+                spaceBetween: 15,
                 slidesPerView: 1.25,
-                spaceBetween: 15
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
                 },
-                // when window width is >= 640px
-                640: {
-                slidesPerView: 1.7,
-                spaceBetween: 30
+                breakpoints: {
+                    // when window width is >= 480px
+                    480: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 15
+                    },
+                    // when window width is >= 640px
+                    640: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    1000: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    1400: {
+                    slidesPerView: 3.23,
+                    spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    1800: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 30
+                    }
                 },
-                // when window width is >= 640px
-                1000: {
-                slidesPerView: 2,
-                spaceBetween: 30
+
+
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-                // when window width is >= 640px
-                1400: {
-                slidesPerView: 3.23,
-                spaceBetween: 30
-                },
-                // when window width is >= 640px
-                1800: {
-                slidesPerView: 3.5,
-                spaceBetween: 30
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
                 }
-            },
-
-
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
             })
 
         });

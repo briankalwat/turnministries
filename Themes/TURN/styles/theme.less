@@ -58,6 +58,8 @@ main {
 
 // 2. Bootstrap Overrides
 // -------------------------
+
+
 .collapse {
   overflow: hidden;
 }
@@ -98,14 +100,25 @@ h3,
 h4,
 .h4,
 h5,
-.h5,
-h6,
-.h6 {
+.h5 {
   letter-spacing: -1px;
   small,
   .small {
     font-size: 75%;
   }
+}
+
+h6,
+.h6 {
+  letter-spacing: -.5px;
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+hr {
+  border: 3px solid rgba(0,0,0,.15);
 }
 
 .font-weight-light { font-weight: 300; }
@@ -126,6 +139,7 @@ a:not(.btn) {
 }
 
 .text-italic { font-style: italic; }
+.text-strong { font-weight: 700; }
 
 .lead {
   margin-bottom: @line-height-computed;
@@ -357,6 +371,20 @@ a:hover i.fs {
       color: @gray-darker;
     }
   }
+
+  .panel {
+    .btn-default {
+      .button-variant(
+        @gray-darker; transparent; @gray-darker
+      );
+  
+      &:hover {
+        background-color: @gray-darker;
+        border-color: @gray-darker;
+        color: #fff;
+      }
+    }
+  }
 }
 
 .btn-secondary {
@@ -417,12 +445,10 @@ a:hover i.fs {
 
 /*-- panels --*/
 .panel { border-width: 0; }
-.panel-title {
-  letter-spacing: -1px;
-}
-.panel-body {
-  padding-bottom: 0;
-}
+.panel-title { letter-spacing: -1px; }
+.panel-heading { padding: 15px 20px 10px; }
+.accordion .panel-heading { padding: 15px 20px; }
+.panel-body { padding-bottom: 0; }
 .panel-secondary {
   .panel-variant(
     @panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg;
@@ -432,10 +458,11 @@ a:hover i.fs {
 
 /*-- wells --*/
 .well {
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.08);
   box-shadow: none;
   border: none;
   padding: @line-height-computed;
+  margin-bottom: @line-height-computed;
 
   & > *:last-child {
     margin-bottom: 0;
@@ -452,6 +479,28 @@ a:hover i.fs {
 
 // 3. Theme Styling
 // -------------------------
+
+.display-inline { display: inline; }
+.display-inline-block { display: inline-block; }
+.display-block { display: block; }
+
+/*-- flex floating --*/
+.floating {
+  display: flex;
+  align-items: center;
+}
+
+.floating-item {
+  // max-width: 50%;
+}
+
+.floating-item--top {
+  align-self: flex-start;
+}
+
+.floating-item--bottom {
+  align-self: flex-end;
+}
 
 /*-- navigation --*/
 #navigation {
@@ -479,7 +528,7 @@ a:hover i.fs {
 }
 
 .shadowed, .panel {
-  box-shadow: 0 2px 0 rgba(0,0,0,.1), 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 rgba(0,0,0,.05), 0 0 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.05s ease-in-out;
 }
 .shadowed-lg {
@@ -573,6 +622,43 @@ section {
   z-index: 1;
 }
 
+/*-- scripture reference tagger --*/
+#nbtDiv {
+  z-index: 10;
+  width: 100%;
+  max-width: 400px;
+  max-height: 300px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: auto;
+  box-shadow: 0 2px 0 rgba(0,0,0,.05), 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#nbtHeader {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -.5px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: @gray-darker;
+}
+
+#nbtContent {
+  padding: 20px;
+}
+
+#nbtCloseImage, #nbtPoweredBy {
+  display: none;
+}
+
+#nbtReadMoreLink {
+  font-size: 18px;
+}
+
+#verseTarget a:first-of-type {
+  text-decoration: none;
+}
+
 // 4. Responsive Overrides
 // -------------------------
 
@@ -584,25 +670,7 @@ section {
 
 // Medium devices (desktops, 992px and up)
 @media (min-width: @screen-md-min) {
-  h1, .h2 { font-size: @font-size-h1 * 1.1; }
-
-  /*-- flex floating --*/
-  .floating {
-    display: flex;
-    align-items: center;
-  }
-
-  .floating-item {
-    // max-width: 50%;
-  }
-
-  .floating-item--top {
-    align-self: flex-start;
-  }
-
-  .floating-item--bottom {
-    align-self: flex-end;
-  }
+  h1, .h1 { font-size: @font-size-h1 * 1.2; }
 }
 
 // Large devices (large desktops, 1200px and up)

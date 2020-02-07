@@ -59,6 +59,14 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/our-team.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/our-team.html",
+		"oF": 0
+		},
 	"/Styles/.csscomb.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3112,6 +3120,14 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 2
+		},
+	"/Themes/TURN/assets/lava/our-team.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/our-team.html",
+		"oF": 0
 		},
 	"/Themes/TURN/assets/lava/what-we-do.kit": {
 		"cB": 0,

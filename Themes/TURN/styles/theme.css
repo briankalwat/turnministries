@@ -153,7 +153,7 @@ img.jcrop-preview {
   position: relative;
   display: inline-block;
   width: 100% !important;
-  font-size: 21px;
+  font-size: 20px;
   text-align: left;
   vertical-align: middle;
 }
@@ -248,10 +248,10 @@ img.jcrop-preview {
 .chosen-container-single .chosen-single {
   position: relative;
   display: block;
-  height: 48px;
+  height: 46px;
   padding: 0 0 0 12px;
   overflow: hidden;
-  line-height: 48px;
+  line-height: 46px;
   color: #404040;
   text-decoration: none;
   white-space: nowrap;
@@ -280,13 +280,13 @@ img.jcrop-preview {
   right: 30px;
   display: inline-block;
   width: 24px;
-  height: 48px;
+  height: 46px;
   text-align: center;
   cursor: pointer;
 }
 .chosen-container-single .chosen-single abbr::before {
   font-family: 'FontAwesome';
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 900;
   color: #8c8c8c;
   content: "\f00d";
@@ -303,14 +303,14 @@ img.jcrop-preview {
   right: 0;
   display: block;
   width: 32px;
-  height: 48px;
+  height: 46px;
   padding-left: 8px;
 }
 .chosen-container-single .chosen-single div::after {
   position: relative;
   display: inline-block;
   font-family: 'FontAwesome';
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 900;
   color: #8c8c8c;
   content: "\f078";
@@ -340,7 +340,7 @@ img.jcrop-preview {
   left: -28px;
   display: inline-block;
   font-family: 'FontAwesome';
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 900;
   color: #8c8c8c;
   content: "\f002";
@@ -391,7 +391,7 @@ img.jcrop-preview {
 }
 .chosen-container-multi .chosen-choices .search-field input[type="text"] {
   width: 100% !important;
-  height: 46px;
+  height: 44px;
   padding: 0 0 0 0.75rem;
   margin: 0;
   color: #888888;
@@ -407,8 +407,8 @@ img.jcrop-preview {
 .chosen-container-multi .chosen-choices .search-choice {
   position: relative;
   padding: 4px 24px 4px 4px;
-  margin: 9px 0 0 8px;
-  font-size: 18px;
+  margin: 8.5px 0 0 8px;
+  font-size: 17px;
   line-height: 1;
   color: #404040;
   cursor: default;
@@ -428,7 +428,7 @@ img.jcrop-preview {
   width: 16px;
   height: 16px;
   font-family: 'FontAwesome';
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 900;
   color: #8c8c8c;
   cursor: pointer;
@@ -907,15 +907,15 @@ body.modal-open,
     7. Static Control
 */
 .input-xs {
-  height: 31px;
+  height: 29px;
   padding: 1px 5px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   border-radius: 3px;
 }
 select.input-xs {
-  height: 31px;
-  line-height: 31px;
+  height: 29px;
+  line-height: 29px;
 }
 textarea.input-xs,
 select[multiple].input-xs {
@@ -947,7 +947,7 @@ a.aspNetDisabled {
   padding-top: 0;
 }
 .form-group {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.42857143;
 }
 .form-group .checkbox:last-child {
@@ -1634,8 +1634,8 @@ td.grid-col-actions {
 }
 .grid-select-cell .photo-icon {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   vertical-align: top;
 }
 .table > tbody > tr.grid-section-header > td {
@@ -1907,7 +1907,7 @@ tr.row-highlight td {
 /* text between input elements in dataview filters - DT */
 span.data-view-filter-label {
   display: inline-block;
-  min-height: 49px;
+  min-height: 46px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin: 0 12px 0 0;
@@ -2187,9 +2187,9 @@ span.data-view-filter-label {
   left: auto;
 }
 .meta .meta-body .btn-overflow {
-  height: 21px;
+  height: 20px;
   padding: 0;
-  line-height: 21px;
+  line-height: 20px;
   color: #b3b3b3;
 }
 .meta .meta-body .btn-overflow:hover,
@@ -3485,7 +3485,7 @@ span.field-value {
     width: 100%;
     margin: 8px 0 16px;
     padding: 8px 16px;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.42857143;
     border-radius: 6px;
   }
@@ -4631,7 +4631,7 @@ iframe.email-body {
   width: 225px;
   max-width: calc(100% - 25px);
   padding: 8px 16px;
-  font-size: 21px;
+  font-size: 20px;
   color: #8c8c8c;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -4643,14 +4643,14 @@ iframe.email-body {
 .picker .picker-label i {
   float: left;
   margin-right: 6px;
-  line-height: 30px;
+  line-height: 28px;
   vertical-align: bottom;
 }
 .picker .picker-label span {
   float: left;
   width: calc(100% - 42px);
   overflow: hidden;
-  line-height: 30px;
+  line-height: 28px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -4659,7 +4659,7 @@ iframe.email-body {
 }
 .picker .input-group-sm > .form-control,
 .picker .input-group-sm > .input-group-addon {
-  height: 35px;
+  height: 33px;
   padding: 3px 5px;
 }
 .picker .picker-select-none {
@@ -4988,7 +4988,7 @@ ul.rocktree ul {
   opacity: 1;
 }
 .block-title {
-  margin: 0 0 10px;
+  margin: 0 0 9.33333333px;
 }
 .list-as-blocks h3 {
   margin: 6px 0;
@@ -7013,8 +7013,8 @@ ul.list-group-panel .list-group-item:first-child,
   position: relative;
   z-index: initial;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   vertical-align: text-top;
   cursor: pointer;
   border-radius: 6px;
@@ -7025,8 +7025,8 @@ ul.list-group-panel .list-group-item:first-child,
   position: absolute;
   left: 0;
   z-index: -1;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   content: "";
   background-image: linear-gradient(45deg, #f8f9fa 25%, transparent 25%, transparent 75%, #f8f9fa 75%, #f8f9fa), linear-gradient(45deg, #f8f9fa 25%, transparent 25%, transparent 75%, #f8f9fa 75%, #f8f9fa);
   background-position: 0 0, 30px 30px;
@@ -8321,7 +8321,7 @@ th[align="right"] {
   background-color: #ee7624 !important;
 }
 .badge-legend .badge {
-  height: 30px;
+  height: 28px;
   margin-right: 4px;
   cursor: pointer;
 }
@@ -8331,7 +8331,7 @@ th[align="right"] {
 .popover-content header {
   padding: 8px 14px;
   margin: -9px -14px 8px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -9312,27 +9312,27 @@ fieldset[disabled] .btn-danger-solid.focus {
   font-weight: 900 !important;
 }
 .display-1 {
-  font-size: 157.5px;
+  font-size: 150px;
   letter-spacing: -2px;
 }
 .display-2 {
-  font-size: 115.5px;
+  font-size: 110px;
   letter-spacing: -2px;
 }
 .display-3 {
-  font-size: 73.5px;
+  font-size: 70px;
   letter-spacing: -2px;
 }
 .display-4 {
-  font-size: 52.5px;
+  font-size: 50px;
   letter-spacing: -2px;
 }
 .display-5 {
-  font-size: 42px;
+  font-size: 40px;
   letter-spacing: -1px;
 }
 .display-6 {
-  font-size: 25.2px;
+  font-size: 24px;
   letter-spacing: -1px;
 }
 @media (min-width: 768px) {
@@ -9346,27 +9346,27 @@ fieldset[disabled] .btn-danger-solid.focus {
     text-align: center !important;
   }
   .display-sm-1 {
-    font-size: 157.5px;
+    font-size: 150px;
     letter-spacing: -2px;
   }
   .display-sm-2 {
-    font-size: 115.5px;
+    font-size: 110px;
     letter-spacing: -2px;
   }
   .display-sm-3 {
-    font-size: 73.5px;
+    font-size: 70px;
     letter-spacing: -2px;
   }
   .display-sm-4 {
-    font-size: 52.5px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
   .display-sm-5 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1px;
   }
   .display-sm-6 {
-    font-size: 25.2px;
+    font-size: 24px;
     letter-spacing: -1px;
   }
 }
@@ -9381,27 +9381,27 @@ fieldset[disabled] .btn-danger-solid.focus {
     text-align: center !important;
   }
   .display-md-1 {
-    font-size: 157.5px;
+    font-size: 150px;
     letter-spacing: -2px;
   }
   .display-md-2 {
-    font-size: 115.5px;
+    font-size: 110px;
     letter-spacing: -2px;
   }
   .display-md-3 {
-    font-size: 73.5px;
+    font-size: 70px;
     letter-spacing: -2px;
   }
   .display-md-4 {
-    font-size: 52.5px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
   .display-md-5 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1px;
   }
   .display-md-6 {
-    font-size: 25.2px;
+    font-size: 24px;
     letter-spacing: -1px;
   }
 }
@@ -9416,27 +9416,27 @@ fieldset[disabled] .btn-danger-solid.focus {
     text-align: center !important;
   }
   .display-lg-1 {
-    font-size: 157.5px;
+    font-size: 150px;
     letter-spacing: -2px;
   }
   .display-lg-2 {
-    font-size: 115.5px;
+    font-size: 110px;
     letter-spacing: -2px;
   }
   .display-lg-3 {
-    font-size: 73.5px;
+    font-size: 70px;
     letter-spacing: -2px;
   }
   .display-lg-4 {
-    font-size: 52.5px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
   .display-lg-5 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1px;
   }
   .display-lg-6 {
-    font-size: 25.2px;
+    font-size: 24px;
     letter-spacing: -1px;
   }
 }
@@ -9451,27 +9451,27 @@ fieldset[disabled] .btn-danger-solid.focus {
     text-align: center !important;
   }
   .display-xl-1 {
-    font-size: 157.5px;
+    font-size: 150px;
     letter-spacing: -2px;
   }
   .display-xl-2 {
-    font-size: 115.5px;
+    font-size: 110px;
     letter-spacing: -2px;
   }
   .display-xl-3 {
-    font-size: 73.5px;
+    font-size: 70px;
     letter-spacing: -2px;
   }
   .display-xl-4 {
-    font-size: 52.5px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
   .display-xl-5 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1px;
   }
   .display-xl-6 {
-    font-size: 25.2px;
+    font-size: 24px;
     letter-spacing: -1px;
   }
 }
@@ -12254,7 +12254,7 @@ h6,
 .h5,
 .h6 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 h1 small,
 h2 small,
@@ -12295,24 +12295,31 @@ h3 .small,
 h4,
 .h4,
 h5,
-.h5,
-h6,
-.h6 {
+.h5 {
   letter-spacing: -1px;
 }
 h4 small,
 .h4 small,
 h5 small,
 .h5 small,
-h6 small,
-.h6 small,
 h4 .small,
 .h4 .small,
 h5 .small,
-.h5 .small,
+.h5 .small {
+  font-size: 75%;
+}
+h6,
+.h6 {
+  letter-spacing: -0.5px;
+}
+h6 small,
+.h6 small,
 h6 .small,
 .h6 .small {
   font-size: 75%;
+}
+hr {
+  border: 3px solid rgba(0, 0, 0, 0.15);
 }
 .font-weight-light {
   font-weight: 300;
@@ -12325,7 +12332,7 @@ h6 .small,
 }
 p {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 a:not(.btn) {
   text-decoration: underline;
@@ -12336,16 +12343,19 @@ a:not(.btn):hover {
 .text-italic {
   font-style: italic;
 }
+.text-strong {
+  font-weight: 700;
+}
 .lead {
-  margin-bottom: 30px;
-  font-size: 25px;
+  margin-bottom: 28px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
   letter-spacing: -0.2px;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 27.3px;
+    font-size: 26px;
   }
 }
 ul,
@@ -12831,6 +12841,172 @@ fieldset[disabled] .bg-gray-darker .btn-default.focus {
   border-color: #fff;
   color: #222222;
 }
+.bg-primary .panel .btn-default,
+.bg-secondary .panel .btn-default,
+.bg-gray .panel .btn-default,
+.bg-gray-dark .panel .btn-default,
+.bg-gray-darker .panel .btn-default {
+  color: #222222;
+  background-color: transparent;
+  border-color: #222222;
+}
+.bg-primary .panel .btn-default:focus,
+.bg-secondary .panel .btn-default:focus,
+.bg-gray .panel .btn-default:focus,
+.bg-gray-dark .panel .btn-default:focus,
+.bg-gray-darker .panel .btn-default:focus,
+.bg-primary .panel .btn-default.focus,
+.bg-secondary .panel .btn-default.focus,
+.bg-gray .panel .btn-default.focus,
+.bg-gray-dark .panel .btn-default.focus,
+.bg-gray-darker .panel .btn-default.focus {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #000000;
+}
+.bg-primary .panel .btn-default:hover,
+.bg-secondary .panel .btn-default:hover,
+.bg-gray .panel .btn-default:hover,
+.bg-gray-dark .panel .btn-default:hover,
+.bg-gray-darker .panel .btn-default:hover {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #040404;
+}
+.bg-primary .panel .btn-default:active,
+.bg-secondary .panel .btn-default:active,
+.bg-gray .panel .btn-default:active,
+.bg-gray-dark .panel .btn-default:active,
+.bg-gray-darker .panel .btn-default:active,
+.bg-primary .panel .btn-default.active,
+.bg-secondary .panel .btn-default.active,
+.bg-gray .panel .btn-default.active,
+.bg-gray-dark .panel .btn-default.active,
+.bg-gray-darker .panel .btn-default.active,
+.open > .dropdown-toggle.bg-primary .panel .btn-default,
+.open > .dropdown-toggle.bg-secondary .panel .btn-default,
+.open > .dropdown-toggle.bg-gray .panel .btn-default,
+.open > .dropdown-toggle.bg-gray-dark .panel .btn-default,
+.open > .dropdown-toggle.bg-gray-darker .panel .btn-default {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border-color: #040404;
+}
+.bg-primary .panel .btn-default:active:hover,
+.bg-secondary .panel .btn-default:active:hover,
+.bg-gray .panel .btn-default:active:hover,
+.bg-gray-dark .panel .btn-default:active:hover,
+.bg-gray-darker .panel .btn-default:active:hover,
+.bg-primary .panel .btn-default.active:hover,
+.bg-secondary .panel .btn-default.active:hover,
+.bg-gray .panel .btn-default.active:hover,
+.bg-gray-dark .panel .btn-default.active:hover,
+.bg-gray-darker .panel .btn-default.active:hover,
+.open > .dropdown-toggle.bg-primary .panel .btn-default:hover,
+.open > .dropdown-toggle.bg-secondary .panel .btn-default:hover,
+.open > .dropdown-toggle.bg-gray .panel .btn-default:hover,
+.open > .dropdown-toggle.bg-gray-dark .panel .btn-default:hover,
+.open > .dropdown-toggle.bg-gray-darker .panel .btn-default:hover,
+.bg-primary .panel .btn-default:active:focus,
+.bg-secondary .panel .btn-default:active:focus,
+.bg-gray .panel .btn-default:active:focus,
+.bg-gray-dark .panel .btn-default:active:focus,
+.bg-gray-darker .panel .btn-default:active:focus,
+.bg-primary .panel .btn-default.active:focus,
+.bg-secondary .panel .btn-default.active:focus,
+.bg-gray .panel .btn-default.active:focus,
+.bg-gray-dark .panel .btn-default.active:focus,
+.bg-gray-darker .panel .btn-default.active:focus,
+.open > .dropdown-toggle.bg-primary .panel .btn-default:focus,
+.open > .dropdown-toggle.bg-secondary .panel .btn-default:focus,
+.open > .dropdown-toggle.bg-gray .panel .btn-default:focus,
+.open > .dropdown-toggle.bg-gray-dark .panel .btn-default:focus,
+.open > .dropdown-toggle.bg-gray-darker .panel .btn-default:focus,
+.bg-primary .panel .btn-default:active.focus,
+.bg-secondary .panel .btn-default:active.focus,
+.bg-gray .panel .btn-default:active.focus,
+.bg-gray-dark .panel .btn-default:active.focus,
+.bg-gray-darker .panel .btn-default:active.focus,
+.bg-primary .panel .btn-default.active.focus,
+.bg-secondary .panel .btn-default.active.focus,
+.bg-gray .panel .btn-default.active.focus,
+.bg-gray-dark .panel .btn-default.active.focus,
+.bg-gray-darker .panel .btn-default.active.focus,
+.open > .dropdown-toggle.bg-primary .panel .btn-default.focus,
+.open > .dropdown-toggle.bg-secondary .panel .btn-default.focus,
+.open > .dropdown-toggle.bg-gray .panel .btn-default.focus,
+.open > .dropdown-toggle.bg-gray-dark .panel .btn-default.focus,
+.open > .dropdown-toggle.bg-gray-darker .panel .btn-default.focus {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #000000;
+}
+.bg-primary .panel .btn-default.disabled:hover,
+.bg-secondary .panel .btn-default.disabled:hover,
+.bg-gray .panel .btn-default.disabled:hover,
+.bg-gray-dark .panel .btn-default.disabled:hover,
+.bg-gray-darker .panel .btn-default.disabled:hover,
+.bg-primary .panel .btn-default[disabled]:hover,
+.bg-secondary .panel .btn-default[disabled]:hover,
+.bg-gray .panel .btn-default[disabled]:hover,
+.bg-gray-dark .panel .btn-default[disabled]:hover,
+.bg-gray-darker .panel .btn-default[disabled]:hover,
+fieldset[disabled] .bg-primary .panel .btn-default:hover,
+fieldset[disabled] .bg-secondary .panel .btn-default:hover,
+fieldset[disabled] .bg-gray .panel .btn-default:hover,
+fieldset[disabled] .bg-gray-dark .panel .btn-default:hover,
+fieldset[disabled] .bg-gray-darker .panel .btn-default:hover,
+.bg-primary .panel .btn-default.disabled:focus,
+.bg-secondary .panel .btn-default.disabled:focus,
+.bg-gray .panel .btn-default.disabled:focus,
+.bg-gray-dark .panel .btn-default.disabled:focus,
+.bg-gray-darker .panel .btn-default.disabled:focus,
+.bg-primary .panel .btn-default[disabled]:focus,
+.bg-secondary .panel .btn-default[disabled]:focus,
+.bg-gray .panel .btn-default[disabled]:focus,
+.bg-gray-dark .panel .btn-default[disabled]:focus,
+.bg-gray-darker .panel .btn-default[disabled]:focus,
+fieldset[disabled] .bg-primary .panel .btn-default:focus,
+fieldset[disabled] .bg-secondary .panel .btn-default:focus,
+fieldset[disabled] .bg-gray .panel .btn-default:focus,
+fieldset[disabled] .bg-gray-dark .panel .btn-default:focus,
+fieldset[disabled] .bg-gray-darker .panel .btn-default:focus,
+.bg-primary .panel .btn-default.disabled.focus,
+.bg-secondary .panel .btn-default.disabled.focus,
+.bg-gray .panel .btn-default.disabled.focus,
+.bg-gray-dark .panel .btn-default.disabled.focus,
+.bg-gray-darker .panel .btn-default.disabled.focus,
+.bg-primary .panel .btn-default[disabled].focus,
+.bg-secondary .panel .btn-default[disabled].focus,
+.bg-gray .panel .btn-default[disabled].focus,
+.bg-gray-dark .panel .btn-default[disabled].focus,
+.bg-gray-darker .panel .btn-default[disabled].focus,
+fieldset[disabled] .bg-primary .panel .btn-default.focus,
+fieldset[disabled] .bg-secondary .panel .btn-default.focus,
+fieldset[disabled] .bg-gray .panel .btn-default.focus,
+fieldset[disabled] .bg-gray-dark .panel .btn-default.focus,
+fieldset[disabled] .bg-gray-darker .panel .btn-default.focus {
+  background-color: transparent;
+  border-color: #222222;
+}
+.bg-primary .panel .btn-default .badge,
+.bg-secondary .panel .btn-default .badge,
+.bg-gray .panel .btn-default .badge,
+.bg-gray-dark .panel .btn-default .badge,
+.bg-gray-darker .panel .btn-default .badge {
+  color: transparent;
+  background-color: #222222;
+}
+.bg-primary .panel .btn-default:hover,
+.bg-secondary .panel .btn-default:hover,
+.bg-gray .panel .btn-default:hover,
+.bg-gray-dark .panel .btn-default:hover,
+.bg-gray-darker .panel .btn-default:hover {
+  background-color: #222222;
+  border-color: #222222;
+  color: #fff;
+}
 .btn-secondary {
   color: #fff;
   background-color: #5f66ca;
@@ -12933,6 +13109,12 @@ fieldset[disabled] .btn-secondary.focus {
 .panel-title {
   letter-spacing: -1px;
 }
+.panel-heading {
+  padding: 15px 20px 10px;
+}
+.accordion .panel-heading {
+  padding: 15px 20px;
+}
 .panel-body {
   padding-bottom: 0;
 }
@@ -12956,19 +13138,40 @@ fieldset[disabled] .btn-secondary.focus {
 }
 /*-- wells --*/
 .well {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.08);
   box-shadow: none;
   border: none;
-  padding: 30px;
+  padding: 28px;
+  margin-bottom: 28px;
 }
 .well > *:last-child {
   margin-bottom: 0;
 }
 .well.well-sm {
-  padding: 24px;
+  padding: 23px;
 }
 .well.well-lg {
-  padding: 45px;
+  padding: 42px;
+}
+.display-inline {
+  display: inline;
+}
+.display-inline-block {
+  display: inline-block;
+}
+.display-block {
+  display: block;
+}
+/*-- flex floating --*/
+.floating {
+  display: flex;
+  align-items: center;
+}
+.floating-item--top {
+  align-self: flex-start;
+}
+.floating-item--bottom {
+  align-self: flex-end;
 }
 /*-- navigation --*/
 #navigation {
@@ -12993,7 +13196,7 @@ fieldset[disabled] .btn-secondary.focus {
 }
 .shadowed,
 .panel {
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 0 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.05s ease-in-out;
 }
 .shadowed-lg {
@@ -13071,21 +13274,42 @@ section {
   position: relative;
   z-index: 1;
 }
+/*-- scripture reference tagger --*/
+#nbtDiv {
+  z-index: 10;
+  width: 100%;
+  max-width: 400px;
+  max-height: 300px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: auto;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#nbtHeader {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #222222;
+}
+#nbtContent {
+  padding: 20px;
+}
+#nbtCloseImage,
+#nbtPoweredBy {
+  display: none;
+}
+#nbtReadMoreLink {
+  font-size: 18px;
+}
+#verseTarget a:first-of-type {
+  text-decoration: none;
+}
 @media (min-width: 992px) {
   h1,
-  .h2 {
-    font-size: 58.3px;
-  }
-  /*-- flex floating --*/
-  .floating {
-    display: flex;
-    align-items: center;
-  }
-  .floating-item--top {
-    align-self: flex-start;
-  }
-  .floating-item--bottom {
-    align-self: flex-end;
+  .h1 {
+    font-size: 55.2px;
   }
 }
 @media only screen and (max-width: 480px) {
