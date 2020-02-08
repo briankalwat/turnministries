@@ -83,14 +83,6 @@
 		"oAP": "/give.html",
 		"oF": 0
 		},
-	"/giving.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/giving.html",
-		"oF": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
