@@ -142,6 +142,12 @@ a:not(.btn) {
   }
 }
 
+a.panel-heading {
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .text-italic { font-style: italic; }
 .text-strong { font-weight: 700; }
 
@@ -449,15 +455,16 @@ a:hover i.fs {
 
 /*-- panels --*/
 .panel { border-width: 0; overflow: hidden; }
-.panel-title { letter-spacing: -1px; }
+.panel-title { font-size: @font-size-base; letter-spacing: -1px; }
 .panel-heading {
+  font-family: proxima-nova, sans-serif;
   padding: 15px 20px 10px; 
 
   &:focus {
     outline: none;
   }
 }
-.accordion .panel-heading { padding: 15px 20px; }
+.accordion .panel-heading { padding: 12px 17px; }
 .panel-body { padding-bottom: 0; }
 .panel-secondary {
   .panel-variant(
