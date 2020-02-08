@@ -120,7 +120,7 @@
 </div>
 
 <!-- HERO -->
-<section class="bg-gray-darker px-3 px-sm-0 py-6 py-sm-6 py-md-8">
+<section class="bg-gray-darker px-3 px-sm-0 py-6 py-sm-7 py-md-8">
     <div class="text-center bring-forward mx-auto w-100 w-sm-75 w-md-60 w-lg-60 w-xl-50">
         <h1>Get Involved</h1>
         <p class="lead">We would love to have you join in our mission of connecting students to local churches and ministries. There are three main ways to get involved</p>
@@ -242,6 +242,10 @@
                 c = currentScrollTop;
             });
 
+            if($(window).scrollTop() > 0) {
+                navbar.addClass("scrollUp");
+            }
+
             /* open and close mobile navigation */
             $('[data-nav="open"]').on('click', function(e){
                 e.preventDefault();
@@ -261,7 +265,8 @@
                 topOnEmptyHash: true,
                 clip: true,
                 easing: 'easeInOutCubic',
-                updateURL: false
+                updateURL: true,
+	            popstate: true
             });
 
             /* take care of offset caused by fixed header */

@@ -120,7 +120,7 @@
 </div>
 
 <!-- HERO -->
-<section class="bg-gray-darker px-3 px-sm-0 py-6 py-sm-6 py-md-8">
+<section class="bg-gray-darker px-3 px-sm-0 py-6 py-sm-7 py-md-8">
     <div class="text-center bring-forward mx-auto w-100 w-sm-75 w-md-60 w-lg-60 w-xl-50">
         <h1>About TURN Minsitries</h1>
         <p class="lead">TURN exists to support, develop, and launch <span class="text-primary">campus-based, retreat-style ministries</span> so incoming students can connect with local churches and ministries as they enter into college.</p>
@@ -341,6 +341,10 @@
                 c = currentScrollTop;
             });
 
+            if($(window).scrollTop() > 0) {
+                navbar.addClass("scrollUp");
+            }
+
             /* open and close mobile navigation */
             $('[data-nav="open"]').on('click', function(e){
                 e.preventDefault();
@@ -360,7 +364,8 @@
                 topOnEmptyHash: true,
                 clip: true,
                 easing: 'easeInOutCubic',
-                updateURL: false
+                updateURL: true,
+	            popstate: true
             });
 
             /* take care of offset caused by fixed header */

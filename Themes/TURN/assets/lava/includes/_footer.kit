@@ -53,6 +53,10 @@
                 c = currentScrollTop;
             });
 
+            if($(window).scrollTop() > 0) {
+                navbar.addClass("scrollUp");
+            }
+
             /* open and close mobile navigation */
             $('[data-nav="open"]').on('click', function(e){
                 e.preventDefault();
@@ -72,7 +76,8 @@
                 topOnEmptyHash: true,
                 clip: true,
                 easing: 'easeInOutCubic',
-                updateURL: false
+                updateURL: true,
+	            popstate: true
             });
 
             /* take care of offset caused by fixed header */
