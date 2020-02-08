@@ -12403,7 +12403,7 @@ a:not(.btn):hover {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.5px;
 }
 @media (min-width: 768px) {
   .lead {
@@ -13360,6 +13360,9 @@ section {
   font-size: 18px;
 }
 #verseTarget a:first-of-type {
+  text-decoration: none;
+}
+footer a:not(.btn) {
   text-decoration: none;
 }
 @media (min-width: 992px) {

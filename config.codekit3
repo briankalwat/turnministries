@@ -75,6 +75,22 @@
 		"oAP": "/get-involved.html",
 		"oF": 0
 		},
+	"/give.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/give.html",
+		"oF": 0
+		},
+	"/giving.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/giving.html",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3119,6 +3135,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/get-involved.html",
+		"oF": 0
+		},
+	"/Themes/TURN/assets/lava/give.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/give.html",
 		"oF": 0
 		},
 	"/Themes/TURN/assets/lava/includes/_footer.kit": {
