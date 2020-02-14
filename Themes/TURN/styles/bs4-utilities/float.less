@@ -10,7 +10,7 @@
 
 //-- float-responsive --//
 .float-responsive-utilities() {
-  .breakpoints-loop(@i: 1) when (@i <= length(@breakpoints)) {
+  .breakpoints-loop(@i: 1) when (@i =< length(@breakpoints)) {
     @breakpoint:       extract(@breakpoints, @i);
     @breakpoint-abbrv: extract(@breakpoint-abbrvs, @i);
     

@@ -3,11 +3,11 @@
 
 //-- spacing-common --//
 .spacing-common-utilities() {
-  .props-loop(@i: 1) when (@i <= length(@props)) { // @props: margin, padding;
+  .props-loop(@i: 1) when (@i =< length(@props)) { // @props: margin, padding;
     @prop:       extract(@props, @i);
     @prop-abbrv: extract(@prop-abbrvs, @i);
     
-    .spacers-loop(@j: 1) when (@j <= length(@spacers)) {
+    .spacers-loop(@j: 1) when (@j =< length(@spacers)) {
       @spacer:       extract(@spacers, @j);
       @spacer-value: extract(@spacer-values, @j);
       
@@ -37,16 +37,16 @@
 
 //-- spacing-responsive --//
 .spacing-responsive-utilities() {
-  .breakpoints-loop(@i: 1) when (@i <= length(@breakpoints)) { 
+  .breakpoints-loop(@i: 1) when (@i =< length(@breakpoints)) { 
     @breakpoint:       extract(@breakpoints, @i);
     @breakpoint-abbrv: extract(@breakpoint-abbrvs, @i);
     
     @media (min-width: @breakpoint) {
-      .props-loop(@j: 1) when (@j <= length(@props)) { // @props: margin, padding;
+      .props-loop(@j: 1) when (@j =< length(@props)) { // @props: margin, padding;
         @prop:       extract(@props, @j);
         @prop-abbrv: extract(@prop-abbrvs, @j);
 
-        .spacers-loop(@k: 1) when (@k <= length(@spacers)) {
+        .spacers-loop(@k: 1) when (@k =< length(@spacers)) {
           @spacer:       extract(@spacers, @k);
           @spacer-value: extract(@spacer-values, @k);
 

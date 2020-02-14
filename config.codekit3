@@ -3209,35 +3209,35 @@
 		"oAP": "/who-we-are.html",
 		"oF": 2
 		},
-	"/Themes/TURN/js/skrollr.min.js": {
+	"/Themes/TURN/scripts/skrollr.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/Themes/TURN/js/skrollr.min-min.js",
+		"oAP": "/Themes/TURN/scripts/skrollr.min-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"/Themes/TURN/js/smooth-scroll.min.js": {
+	"/Themes/TURN/scripts/smooth-scroll.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/Themes/TURN/js/smooth-scroll.min-min.js",
+		"oAP": "/Themes/TURN/scripts/smooth-scroll.min-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"/Themes/TURN/js/smooth-scroll.polyfills.min.js": {
+	"/Themes/TURN/scripts/smooth-scroll.polyfills.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/Themes/TURN/js/smooth-scroll.polyfills.min-min.js",
+		"oAP": "/Themes/TURN/scripts/smooth-scroll.polyfills.min-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
